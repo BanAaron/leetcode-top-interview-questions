@@ -128,12 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Test images folder
-test_images/
-
-# Output folder contents
-output/*
-!output/.gitkeep
-
 # .idea
 /.idea
