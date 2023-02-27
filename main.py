@@ -1,4 +1,4 @@
-def fizz_buzz(start: int = 1, end: int = 100, divisors: tuple = (3, 5)) -> list:
+def fizz_buzz(start: int = 1, end: int = 100, divisors: tuple = (3, 5)) -> list[str]:
     """
     a function that returns the answer to the fizz buzz game
     :param start: start counting from here
@@ -7,35 +7,25 @@ def fizz_buzz(start: int = 1, end: int = 100, divisors: tuple = (3, 5)) -> list:
     :return: List of strings
     """
     divisors_len = len(divisors)
-    divisor0 = False
-    divisor1 = False
     result = []
 
+    divisors0 = divisors[0]
+    divisors1 = divisors[1]
+
     if divisors_len != 2:
-        raise Exception(
-            f"factors length is {divisors_len}. factors must be a length of 2."
-        )
+        raise Exception(f"factors can only contain 2 items.")
     if end <= start:
-        raise Exception(f"end must be greater than start. start.")
+        raise Exception(f"end must be greater than start.")
     else:
         for x in range(start, end + 1):
-            for y, divisor in enumerate(divisors):
-                if x % divisor == 0 and y == 0:
-                    divisor0 = True
-                if x % divisor == 0 and y == 1:
-                    divisor1 = True
-            if divisor0 and divisor1:
+            if x % divisors0 == 0 and x % divisors1 == 0:
                 result.append("Fizz Buzz")
-            elif divisor0:
+            elif x % divisors0 == 0:
                 result.append("Fizz")
-            elif divisor1:
+            elif x % divisors1 == 0:
                 result.append("Buzz")
             else:
                 result.append(str(x))
-            # finally
-            divisor0 = False
-            divisor1 = False
-
     return result
 
 
