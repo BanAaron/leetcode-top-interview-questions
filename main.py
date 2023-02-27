@@ -1,16 +1,15 @@
-def fizz_buzz(start: int = 1, end: int = 100, divisors: tuple = (3, 5)) -> list[str]:
+def fizz_buzz(start: int = 1, end: int = 100, divisors: tuple = (3, 5)) -> list:
     """
-    a function that returns the answer to the fizz buzz game
-    :param start: start counting from here
-    :param end: stop count here
-    :param divisors: the numbers to divide against
-    :return: List of strings
+    a function that returns the answer to the fizz buzz game.
+    :param start: start counting from here.
+    :param end: stop count here.
+    :param divisors: the numbers to divide against.
+    :return: List of strings.
     """
     divisors_len = len(divisors)
-    result = []
-
     divisors0 = divisors[0]
     divisors1 = divisors[1]
+    result = []
 
     if divisors_len != 2:
         raise Exception(f"factors can only contain 2 items.")
