@@ -7,24 +7,24 @@ def fizz_buzz(start: int = 1, end: int = 100, divisors: tuple = (3, 5)) -> list:
     :return: List of strings.
     """
     divisors_len = len(divisors)
-    divisors0 = divisors[0]
-    divisors1 = divisors[1]
+    divisor1 = divisors[0]
+    divisor2 = divisors[1]
     result = []
 
     if divisors_len != 2:
         raise Exception(f"factors can only contain 2 items.")
-    if end <= start:
+    elif end <= start:
         raise Exception(f"end must be greater than start.")
-    else:
-        for x in range(start, end + 1):
-            if x % divisors0 == 0 and x % divisors1 == 0:
-                result.append("Fizz Buzz")
-            elif x % divisors0 == 0:
-                result.append("Fizz")
-            elif x % divisors1 == 0:
-                result.append("Buzz")
-            else:
-                result.append(str(x))
+
+    for x in range(start, end + 1):
+        if x % divisor1 == 0 and x % divisor2 == 0:
+            result.append("Fizz Buzz")
+        elif x % divisor1 == 0:
+            result.append("Fizz")
+        elif x % divisor2 == 0:
+            result.append("Buzz")
+        else:
+            result.append(str(x))
     return result
 
 
