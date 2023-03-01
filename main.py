@@ -30,4 +30,4 @@ def fizz_buzz(start: int = 1, end: int = 100, divisors: tuple = (3, 5)) -> list:
     return result
 
 
-print(fizz_buzz(1, 20, (3, 5)))
+print(fizz_buzz())
