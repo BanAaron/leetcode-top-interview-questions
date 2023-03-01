@@ -13,6 +13,8 @@ def fizz_buzz(start: int = 1, end: int = 100, divisors: tuple = (3, 5)) -> list:
 
     if divisors_len != 2:
         raise Exception(f"factors can only contain 2 items.")
+    elif type(start) != int or type(end) != int:
+        raise Exception(f"start and end must be int")
     elif end <= start:
         raise Exception(f"end must be greater than start.")
 
@@ -28,4 +30,4 @@ def fizz_buzz(start: int = 1, end: int = 100, divisors: tuple = (3, 5)) -> list:
     return result
 
 
-print(fizz_buzz())
+print(fizz_buzz(1, 20, (3, 5)))
