@@ -1,4 +1,4 @@
-def fizz_buzz(start: int = 1, end: int = 100, divisors: tuple = (3, 5)) -> list:
+def fizz_buzz(start: int = 1, end: int = 100, divisors: tuple[int, int] = (3, 5)) -> list:
     """
     a function that returns the answer to the fizz buzz game.
     :param start: start counting from here.
