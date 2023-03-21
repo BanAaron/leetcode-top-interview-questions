@@ -40,7 +40,7 @@ class CaesarsCipher:
 if __name__ == "__main__":
     cc = CaesarsCipher()
 
-    text = "Hello, my name is Aaron"
+    text = "Hello, my name is Aaron!"
     text_encrypted = cc.encrypt(text)
     print(text_encrypted)
 
