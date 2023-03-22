@@ -37,6 +37,18 @@ Given the root of a binary tree, return its maximum depth.
 
 A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
+# Number of Even and Odd Bits
+
+[LeetCode 2595](https://leetcode.com/problems/number-of-even-and-odd-bits/)
+
+You are given a positive integer `n`.
+
+Let `even` denote the number of even indices in the binary representation of `n` (0-indexed) with value `1`.
+
+Let `odd` denote the number of odd indices in the binary representation of `n` (0-indexed) with value `1`.
+
+Return an integer array `answer` where `answer = [even, odd]`.
+
 # Two Sum
 
 [Twos Sum](https://leetcode.com/problems/two-sum/) is a problem in where you are given an array of integers `nums` and 
