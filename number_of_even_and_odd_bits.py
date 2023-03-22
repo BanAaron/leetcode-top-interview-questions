@@ -1,6 +1,3 @@
-from random import randint
-
-
 class Solution:
     def evenOddBit(self, n: int) -> list[int]:
         answer = [0, 0]
@@ -16,4 +13,4 @@ class Solution:
 if __name__ == "__main__":
     s = Solution()
     for x in range(10):
-        print(s.evenOddBit(randint(1, 1000  )))
+        print(s.evenOddBit(randint(1, 1000)))
