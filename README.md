@@ -19,9 +19,18 @@ For numbers 1 through 100:
 - if the number is divisible by 3 and 5 (15) print FizzBuzz;
 - else, print the number.
 
+# Maximum Depth of Binary Tree
+
+[LeetCode 104](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
+
+Given the root of a binary tree, return its maximum depth.
+
+A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
 # Two Sum
 
-[Twos Sum](https://leetcode.com/problems/two-sum/) is a problem in where you are given an array of integers `nums` and an integer `target`, then return indices 
+[Twos Sum](https://leetcode.com/problems/two-sum/) is a problem in where you are given an array of integers `nums` and 
+an integer `target`, then return indices 
 of the two numbers such that they add up to `target`.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
