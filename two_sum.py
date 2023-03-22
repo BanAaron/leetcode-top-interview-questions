@@ -1,13 +1,22 @@
+# def two_sum(nums: list[int], target: int) -> list[int]:
+#     answer = []
+#     for x, number in enumerate(nums):
+#         for y, num in enumerate(nums):
+#             if number == num and x == y:
+#                 pass
+#             elif number + num == target:
+#                 answer = [x, y]
+#                 break
+#     return answer
+
+
 def two_sum(nums: list[int], target: int) -> list[int]:
-    answer = []
-    for x, number in enumerate(nums):
-        for y, num in enumerate(nums):
-            if number == num and x == y:
-                pass
-            elif number + num == target:
-                answer = [x, y]
-                break
-    return answer
+    store = {}
+    for index, number in enumerate(nums):
+        if target - number in store:
+            return [store[target - number], index]
+        else:
+            store[number] = index
 
 
 if __name__ == "__main__":
