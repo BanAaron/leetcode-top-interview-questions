@@ -22,4 +22,3 @@ def dfs(node):
 
 
 dfs("0")
-print(visited)
