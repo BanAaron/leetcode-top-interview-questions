@@ -13,10 +13,14 @@ graph = {
 }
 
 
+def visit(node):
+    visited.add(node)
+
+
 def dfs(node):
     if node not in visited:
         print(node)
-        visited.add(node)
+        visit(node)
         for neighbor in graph[node]:
             dfs(neighbor)
 
