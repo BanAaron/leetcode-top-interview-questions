@@ -13,12 +13,13 @@ graph = {
 }
 
 
-def dfs(start):
-    if start not in visited:
-        print(start)
-        visited.add(start)
-        for neighbor in graph[start]:
+def dfs(node):
+    if node not in visited:
+        print(node)
+        visited.add(node)
+        for neighbor in graph[node]:
             dfs(neighbor)
 
 
 dfs("0")
+print(visited)
