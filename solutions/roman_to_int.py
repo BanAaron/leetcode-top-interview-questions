@@ -6,37 +6,32 @@ class Solution:
         def add(number):
             ints.append(number)
 
-        # TODO: improve this by using string.replace() instead
-        for index, char in enumerate(chars):
-            if char == "I" and index + 1 < len(chars):
-                if chars[index + 1] in ("V", "X"):
-                    add(-1)
-                else:
+        chars = (
+            chars.replace("IV", "IIII")
+            .replace("IX", "VIIII")
+            .replace("XL", "XXXX")
+            .replace("XC", "LXXXX")
+            .replace("CD", "CCCC")
+            .replace("CM", "DCCCC")
+        )
+
+        for char in chars:
+            match char:
+                case "I":
                     add(1)
-            elif char == "X" and index + 1 < len(chars):
-                if chars[index + 1] in ("L", "C"):
-                    add(-10)
-                else:
+                case "V":
+                    add(5)
+                case "X":
                     add(10)
-            elif char == "C" and index + 1 < len(chars):
-                if chars[index + 1] in ("D", "M"):
-                    add(-100)
-                else:
+                case "L":
+                    add(50)
+                case "C":
                     add(100)
-            elif char == "I":
-                add(1)
-            elif char == "V":
-                add(5)
-            elif char == "X":
-                add(10)
-            elif char == "L":
-                add(50)
-            elif char == "C":
-                add(100)
-            elif char == "D":
-                add(500)
-            elif char == "M":
-                add(1000)
+                case "D":
+                    add(500)
+                case "M":
+                    add(1000)
+
         return sum(ints)
 
 
