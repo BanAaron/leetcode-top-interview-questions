@@ -6,6 +6,7 @@ class Solution:
         def add(number):
             ints.append(number)
 
+        # TODO: improve this by using string.replace() instead
         for index, char in enumerate(chars):
             if char == "I" and index + 1 < len(chars):
                 if chars[index + 1] in ("V", "X"):
