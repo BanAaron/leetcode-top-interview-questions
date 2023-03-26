@@ -55,6 +55,12 @@ Return an integer array `answer` where `answer = [even, odd]`.
 
 Given an integer `x`, return `true` if `x` is a palindrome, and false otherwise.
 
+# Roman to Integer
+
+[LeetCode 13](https://leetcode.com/problems/roman-to-integer/description/)
+
+Given a roman numeral, convert it to an integer.
+
 # Two Sum
 
 [Twos Sum](https://leetcode.com/problems/two-sum/) is a problem in where you are given an array of integers `nums` and 
