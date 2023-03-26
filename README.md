@@ -49,6 +49,12 @@ Let `odd` denote the number of odd indices in the binary representation of `n` (
 
 Return an integer array `answer` where `answer = [even, odd]`.
 
+# Palindrome Number
+
+[LeetCode 9](https://leetcode.com/problems/palindrome-number/)
+
+Given an integer `x`, return `true` if `x` is a palindrome, and false otherwise.
+
 # Two Sum
 
 [Twos Sum](https://leetcode.com/problems/two-sum/) is a problem in where you are given an array of integers `nums` and 
