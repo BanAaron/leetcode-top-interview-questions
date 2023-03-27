@@ -1,18 +1,14 @@
 class Solution:
     def longestCommonPrefix(self, strs: list[str]) -> str:
         length = min(len(i) for i in strs)
-        store = set()
+        stack = set()
         result = ""
 
         for index in range(0, length):
             for string in strs:
-                store.add(string[index])
-            if len(store) == 1:
-                a = store.pop()
-                result += a
-            else:
-                break
-
+                stack.add(string[index])
+            if len(stack) == 1:
+                result += stack.pop()
         return result
 
 
