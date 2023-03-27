@@ -9,6 +9,7 @@ class Solution:
                 stack.add(string[index])
             if len(stack) == 1:
                 result += stack.pop()
+
         return result
 
 
