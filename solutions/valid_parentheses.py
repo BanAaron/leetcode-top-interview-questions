@@ -3,7 +3,7 @@ class Solution:
         stack = ""
         valid_brackets = ("()", "[]", "{}")
 
-        for index, char in enumerate(s):
+        for char in s:
             if char in "([{":
                 stack += char
             elif char in ")]}":
