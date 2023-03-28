@@ -26,6 +26,13 @@ in which each letter in the plaintext is replaced by a letter some fixed number 
 
 In this example we use the increment of 1. A will become B, B will be become C and so on.
 
+## Find the Index of the First Occurrence in a String
+
+[LeetCode 28](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
+
+Given two strings `needle` and `haystack`, return the index of the first occurrence of `needle` in `haystack`, or `-1` 
+if `needle` is not part of `haystack`.
+
 ## Fizz Buzz
 
 [FizzBuzz](https://leetcode.com/problems/fizz-buzz/) is a game that has gained in popularity as a programming assignment 
@@ -84,25 +91,10 @@ Given a roman numeral, convert it to an integer.
 ## Two Sum
 
 [Twos Sum](https://leetcode.com/problems/two-sum/) is a problem in where you are given an array of integers `nums` and 
-an integer `target`, then return indices 
-of the two numbers such that they add up to `target`.
+an integer `target`, then return indices of the two numbers such that they add up to `target`.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
-
-**Examples:**
-
-```
-Input: nums = [2,7,11,15], target = 9
-Output: [0,1]
-Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
-
-Input: nums = [3,2,4], target = 6
-Output: [1,2]
-
-Input: nums = [3,3], target = 6
-Output: [0,1]
-```
 
 ## Valid Parentheses
 
