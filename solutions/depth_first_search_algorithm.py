@@ -18,4 +18,5 @@ def dfs(node):
             dfs(neighbor)
 
 
-dfs("0")
+if __name__ == '__main__':
+    dfs("0")
