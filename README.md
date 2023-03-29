@@ -10,7 +10,7 @@ Python is my language of choice.
 
 ## [Best Time to Buy and Sell Stock](solutions/best_time_to_buy_and_sell_stock.py)
 
-[LeetCode 121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/), [python3](solutions/best_time_to_buy_and_sell_stock.py)
+[LeetCode 121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.
 
