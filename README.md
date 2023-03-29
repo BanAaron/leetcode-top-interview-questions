@@ -26,6 +26,17 @@ in which each letter in the plaintext is replaced by a letter some fixed number 
 
 In this example we use the increment of 1. A will become B, B will be become C and so on.
 
+## Count the Number of Voewel Strings in Range
+
+[LeetCode 2586](https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/description/)
+
+You are given a 0-indexed array of string `words` and two integers `left` and `right`.
+
+A string is called a vowel string if it starts with a vowel character and ends with a vowel character where vowel 
+characters are `'a', 'e', 'i', 'o', 'u'`.
+
+Return the number of vowel strings `words[i]` where i belongs to the inclusive range `[left, right]`.
+
 ## Find the Index of the First Occurrence in a String
 
 [LeetCode 28](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
