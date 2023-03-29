@@ -2,7 +2,7 @@
 
 This is a collection of programming challenges I have completed. Mainly from LeetCode and interview question practice.
 
-Python is my language of choice so all solutions are written so.
+Python is my language of choice.
 
 `<<<<<<:>~`
 
