@@ -44,19 +44,16 @@ Return the number of vowel strings `words[i]` where `i` belongs to the inclusive
 Given two strings `needle` and `haystack`, return the index of the first occurrence of `needle` in `haystack`, or `-1` 
 if `needle` is not part of `haystack`.
 
-## Fizz Buzz
+## [Fizz Buzz](solutions/fizz_buzz.py)
 
-[FizzBuzz](https://leetcode.com/problems/fizz-buzz/) is a game that has gained in popularity as a programming assignment 
-to weed out non-programmers during job interviews. The object of the assignment is less about solving it correctly 
-according to the below rules and more about showing the programmer understands basic, necessary tools such as 
-if-/else-statements and loops. The rules of FizzBuzz are as follows:
+[LeetCode 412](https://leetcode.com/problems/fizz-buzz/)
 
-For numbers 1 through 100:
+Given an integer n, return a string array answer (1-indexed) where:
 
-- if the number is divisible by 3 print Fizz;
-- if the number is divisible by 5 print Buzz;
-- if the number is divisible by 3 and 5 (15) print FizzBuzz;
-- else, print the number.
+- `answer[i] == "FizzBuzz"` if `i` is divisible by `3` and `5`.
+- `answer[i] == "Fizz"` if `i` is divisible by `3`.
+- `answer[i] == "Buzz"` if `i` is divisible by `5`.
+- `answer[i] == i` (as a string) if none of the above conditions are true.
 
 ## [Length of Last Word](solutions/length_of_last_word.py)
 
