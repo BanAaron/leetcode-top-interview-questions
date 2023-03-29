@@ -47,6 +47,13 @@ For numbers 1 through 100:
 - if the number is divisible by 3 and 5 (15) print FizzBuzz;
 - else, print the number.
 
+## Length of Last Word
+[LeetCode 58](https://leetcode.com/problems/length-of-last-word/description/)
+
+Given a string `s` consisting of words and spaces, return the length of the **last** word in the string.
+
+A word is a maximal substring consisting of non-space characters only.
+
 ## Longest Common Prefix
 
 [LeetCode 14](https://leetcode.com/problems/longest-common-prefix/)
