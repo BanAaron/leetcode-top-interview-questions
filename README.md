@@ -8,7 +8,9 @@ Python is my language of choice so all solutions are written so.
 
 ---
 
-## Best Time to Buy and Sell Stock
+[a relative link](solutions/fizz_buzz.py)
+
+## [Best Time to Buy and Sell Stock](solutions/best_time_to_buy_and_sell_stock.py)
 
 [LeetCode 121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
