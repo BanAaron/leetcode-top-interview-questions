@@ -7,6 +7,7 @@ class Solution:
             # words[-1] gives us the last character of the string regardless of the length
             if word[0] in vowels and word[-1] in vowels:
                 answer += 1
+
         return answer
 
 
