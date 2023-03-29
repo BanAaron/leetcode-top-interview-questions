@@ -1,10 +1,7 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
-        store = zip(str(x), reversed(str(x)))
-        for i in store:
-            if i[0] != i[1]:
-                return False
-        return True
+        # returns true if x is the same as x reversed
+        return str(x) == str(x)[::-1]
 
 
 if __name__ == '__main__':
