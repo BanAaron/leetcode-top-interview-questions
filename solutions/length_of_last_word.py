@@ -1,11 +1,11 @@
 class Solution:
-    def lengthOfLastWord(self, s: str) -> int:
+    def lengthOfLastWord(self, string: str) -> int:
         # strip() removes any leading/trailing spaces
         # spit(" ") then creates a list splitting each element by each space
-        s = s.strip().split(" ")
+        string = string.strip().split(" ")
 
         # then simply return the length of the last element
-        return len(s[len(s) - 1])
+        return len(string[-1])
 
 
 if __name__ == "__main__":
