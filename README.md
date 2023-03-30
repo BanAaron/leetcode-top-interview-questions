@@ -8,6 +8,12 @@ Python is my language of choice.
 
 ---
 
+## [Add Binary](solutions/add_binary.py)
+
+[LeetCode 67](https://leetcode.com/problems/add-binary/)
+
+Given two binary strings `a` and `b`, return their sum as a **binary string**.
+
 ## [Best Time to Buy and Sell Stock](solutions/best_time_to_buy_and_sell_stock.py)
 
 [LeetCode 121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
