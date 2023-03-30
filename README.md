@@ -61,6 +61,23 @@ Given an integer n, return a string array answer (1-indexed) where:
 - `answer[i] == "Buzz"` if `i` is divisible by `5`.
 - `answer[i] == i` (as a string) if none of the above conditions are true.
 
+## [K Items With the Maximum Sum](solutions/k_items_with_the_maximum_sum.py)
+
+[LeetCode 2600](https://leetcode.com/problems/k-items-with-the-maximum-sum/description/)
+
+There is a bag that consists of items, each item has a number `1`, `0`, or -`1` written on it.
+
+You are given four non-negative integers `numOnes`, `numZeros`, `numNegOnes`, and `k`.
+
+The bag initially contains:
+
+- `numOnes` items with `1`s written on them.
+- `numZeroes` items with `0`s written on them.
+- `numNegOnes` items with `-1`s written on them.
+
+We want to pick exactly `k` items among the available items. Return the **maximum** possible sum of numbers written on 
+the items.
+
 ## [Left and Right Sum Difference](solutions/left_right_sum_differences.py)
 
 [LeetCode 2574](https://leetcode.com/problems/left-and-right-sum-differences/description/)
