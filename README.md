@@ -61,6 +61,28 @@ Given an integer n, return a string array answer (1-indexed) where:
 - `answer[i] == "Buzz"` if `i` is divisible by `5`.
 - `answer[i] == i` (as a string) if none of the above conditions are true.
 
+## [Left and Right Sum Difference](solutions/left_right_sum_differences.py)
+
+[LeetCode 2574](https://leetcode.com/problems/left-and-right-sum-differences/description/)
+
+Given a **0-indexed** integer array `nums`, find a **0-indexed** integer array `answer` where:
+
+- `answer.length == nums.length`.
+- `answer[i] = |leftSum[i] - rightSum[i]|`.
+
+`| |` means absolute value. 
+
+Where:
+
+- `leftSum[i]` is the sum of elements to the left of the index `i` in the array `nums`. If there is no such element, 
+ `leftSum[i] = 0`.
+- `rightSum[i]` is the sum of elements to the right of the index `i` in the array `nums`. If there is no such element, 
+`rightSum[i] = 0`.
+
+Return the array `answer`.
+
+![Professionally drawn illustration](https://i.imgur.com/BK1Znxv.png)
+
 ## [Length of Last Word](solutions/length_of_last_word.py)
 
 [LeetCode 58](https://leetcode.com/problems/length-of-last-word/description/)
