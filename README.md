@@ -159,6 +159,16 @@ Increment the large integer by one and return the resulting array of digits.
 
 Given a roman numeral, convert it to an integer.
 
+## [Split With Minimum Sum](solution/split_with_minimum_sum.py)
+
+[LeetCode 2578](https://leetcode.com/problems/split-with-minimum-sum/)
+
+Given a positive integer `num`, split it into two non-negative integers `num1` and `num2` such that:
+- The concatenation of `num1` and `num2` is a permutation of `num`.
+- `num1` and `num2` can contain leading zeros.
+
+Return the **minimum** possible sum of `num1` and `num2`
+
 ## [Two Sum](solutions/two_sum.py)
 
 [Twos Sum](https://leetcode.com/problems/two-sum/) is a problem in where you are given an array of integers `nums` and 
