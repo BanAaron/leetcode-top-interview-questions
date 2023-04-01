@@ -159,7 +159,7 @@ Increment the large integer by one and return the resulting array of digits.
 
 Given a roman numeral, convert it to an integer.
 
-## [Split With Minimum Sum](solution/split_with_minimum_sum.py)
+## [Split With Minimum Sum](solutions/split_with_minimum_sum.py)
 
 [LeetCode 2578](https://leetcode.com/problems/split-with-minimum-sum/)
 
