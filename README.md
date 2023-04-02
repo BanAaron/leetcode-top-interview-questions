@@ -125,6 +125,19 @@ Given the root of a binary tree, return its maximum depth.
 A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest 
 leaf node.
 
+## [Merge Two 2D Arrays by Summing Values](solutions/merge_two_2d_arrays_by_summing-values.py)
+
+[LeetCode 2570](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)
+
+You are given two **2D** integer arrays `nums1` and `nums2`.
+
+Merge the two arrays into one array that is sorted in ascending order by id, respecting the following conditions:
+
+- Only ids that appear in at least one of the two arrays should be included in the resulting array.
+- ach id should be included only once and its value should be the sum of the values of this id in the two arrays. If the id does not exist in one of the two arrays then its value in that array is considered to be `0`.
+
+Return the resulting array. The returned array must be sorted in ascending order by id.
+
 ## [Number of Even and Odd Bits](solutions/number_of_even_and_odd_bits.py)
 
 [LeetCode 2595](https://leetcode.com/problems/number-of-even-and-odd-bits/)
