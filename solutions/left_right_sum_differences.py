@@ -14,8 +14,6 @@ class Solution:
                 left.append(sum(nums[:i]))
                 right.append(sum(nums[i + 1 :]))
 
-        print(left)
-        print(right)
         return [abs(x[0] - x[1]) for x in zip(left, right)]
 
 

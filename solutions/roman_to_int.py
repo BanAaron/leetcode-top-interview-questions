@@ -1,11 +1,13 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
+        # TODO: replace this list with an integer. We're not gaining anything by using a list here
         ints = []
         chars = s
 
         def add(number):
             ints.append(number)
 
+        # inelegantly replace all the edge special cases with simplified versions. IV (4) becomes IIII (1,1,1,1) etc
         chars = (
             chars.replace("IV", "IIII")
             .replace("IX", "VIIII")
@@ -15,6 +17,7 @@ class Solution:
             .replace("CM", "DCCCC")
         )
 
+        # basically a switch statement to map each possible roam-nc numeral to an integer value and add it up
         for char in chars:
             match char:
                 case "I":

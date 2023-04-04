@@ -1,15 +1,20 @@
-def even_odd_bit(n: int) -> list[int]:
-    answer = [0, 0]
-    for index, bit in enumerate(bin(n)[2:][::-1]):
-        if index % 2 == 0 and bit == "1":
-            answer[0] += 1
-        elif index % 2 == 1 and bit == "1":
-            answer[1] += 1
+class Solution:
+    def evenOddBit(self, n: int) -> list[int]:
+        evens, odds = 0, 0
 
-    return answer
+        # bin(n)[2:][::-1] convert the n integer to a binary and reverses it
+        for index, bit in enumerate(bin(n)[2:][::-1]):
+            # then if the index is even and the bit is 1 we increment our evens counter
+            if index % 2 == 0 and bit == "1":
+                evens += 1
+            # same logic again for odd bits
+            elif index % 2 == 1 and bit == "1":
+                odds += 1
+
+        return [evens, odds]
 
 
-if __name__ == "__main__":
-    print(even_odd_bit(17))
-    print(even_odd_bit(2))
-    print(even_odd_bit(1605))
+if __name__ == '__main__':
+    s = Solution()
+    s.evenOddBit(17)
+    s.evenOddBit(2)
