@@ -61,6 +61,13 @@ Given an integer n, return a string array answer (1-indexed) where:
 - `answer[i] == "Buzz"` if `i` is divisible by `5`.
 - `answer[i] == i` (as a string) if none of the above conditions are true.
 
+## [Form Smallest Number from Two Digit Arrays](solutions/form_smallest_number_from_two_digit_arrays.py)
+
+[LeetCode 2605](https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/submissions/927517269/)
+
+Given two arrays of unique digits `nums1` and `nums2`, return the **smallest** number that contains **at least** one 
+digit from each array.
+
 ## [K Items With the Maximum Sum](solutions/k_items_with_the_maximum_sum.py)
 
 [LeetCode 2600](https://leetcode.com/problems/k-items-with-the-maximum-sum/description/)
