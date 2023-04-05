@@ -123,6 +123,10 @@ Write a function to find the longest common prefix string amongst an array of st
 
 If there is no common prefix, return an empty string "".
 
+## [Maximum Count of Positive and Negative Integer](solutions/maximum_count_of_positive_and_negative_integer.py)
+
+[LeetCode 2529](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/submissions/928460829/)
+
 ## [Maximum Depth of Binary Tree](solutions/max_depth_binary_tree.py)
 
 [LeetCode 104](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
