@@ -127,6 +127,9 @@ If there is no common prefix, return an empty string "".
 
 [LeetCode 2529](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/submissions/928460829/)
 
+Given an array `nums` sorted in non-decreasing order, return the **maximum** between the number of positive integers and
+the number of negative integers.
+
 ## [Maximum Depth of Binary Tree](solutions/max_depth_binary_tree.py)
 
 [LeetCode 104](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
