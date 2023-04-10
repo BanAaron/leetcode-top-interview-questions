@@ -139,6 +139,22 @@ Given the root of a binary tree, return its maximum depth.
 A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest 
 leaf node.
 
+## [Maximum Difference by Remapping a Digit](solutions/maximum_difference_by_remapping_a_digit.py)
+ 
+[LeetCode 2566](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/description/)
+
+You are given an integer `num`. You know that Danny Mittal will sneakily remap one of the `10` possible digits (0 to 9) 
+to another digit.
+
+Return the difference between the maximum and minimum values Danny can make by remapping exactly one digit in `num`.#
+
+**Notes:**
+
+* When Danny remaps a digit d1 to another digit d2, Danny replaces all occurrences of `d1` in num with `d2`.
+* Danny can remap a digit to itself, in which case `num` does not change.
+* Danny can remap different digits for obtaining minimum and maximum values respectively.
+* The resulting number after remapping can contain leading zeroes.
+
 ## [Merge Two 2D Arrays by Summing Values](solutions/merge_two_2d_arrays_by_summing-values.py)
 
 [LeetCode 2570](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)
