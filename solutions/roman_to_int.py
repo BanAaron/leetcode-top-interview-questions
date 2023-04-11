@@ -1,13 +1,14 @@
 class Solution:
+    def __init__(self):
+        self.answer = 0
+
     def romanToInt(self, s: str) -> int:
-        # TODO: replace this list with an integer. We're not gaining anything by using a list here
-        ints = []
         chars = s
 
         def add(number):
-            ints.append(number)
+            self.answer += number
 
-        # inelegantly replace all the edge special cases with simplified versions. IV (4) becomes IIII (1,1,1,1) etc
+        # inelegantly replace special cases with simplified versions. IV (4) becomes IIII (1,1,1,1) etc
         chars = (
             chars.replace("IV", "IIII")
             .replace("IX", "VIIII")
@@ -35,7 +36,7 @@ class Solution:
                 case "M":
                     add(1000)
 
-        return sum(ints)
+        return self.answer
 
 
 if __name__ == "__main__":
