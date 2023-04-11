@@ -224,6 +224,17 @@ Return the string after all stars have been removed.
 
 Given a roman numeral, convert it to an integer.
 
+```text
+Symbol       Value
+I            1
+V            5
+X            10
+L            50
+C            100
+D            500
+M            1000
+```
+
 ## [Split With Minimum Sum](solutions/split_with_minimum_sum.py)
 
 [LeetCode 2578](https://leetcode.com/problems/split-with-minimum-sum/)
