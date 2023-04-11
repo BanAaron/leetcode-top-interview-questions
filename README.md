@@ -205,6 +205,19 @@ You are given a 0-indexed two-dimensional integer array `nums`.
 Return the largest **prime** number that lies on at least one of the **diagonals** of `nums`. In case, no prime is 
 present on any of the diagonals, return 0.
 
+## [Remove Stars from a String](solutions/remove_stars_from_a_string.py)
+
+[LeetCode 2390](https://leetcode.com/problems/removing-stars-from-a-string/description/)
+
+You are given a string `s`, which contains stars `*`.
+
+In one operation, you can:
+
+- Choose a star in `s`.
+- Remove the closest **non-star** character to its left, as well as remove the star itself.
+
+Return the string after all stars have been removed.
+
 ## [Roman to Integer](solutions/roman_to_int.py)
 
 [LeetCode 13](https://leetcode.com/problems/roman-to-integer/description/)
