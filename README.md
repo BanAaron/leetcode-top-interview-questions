@@ -180,7 +180,7 @@ Let `odd` denote the number of odd indices in the binary representation of `n` (
 
 Return an integer array `answer` where `answer = [even, odd]`.
 
-## [Palindrome Number](solutions/palindrome_number.py)
+##[Palindrome Number](solutions/palindrome_number.py)
 
 [LeetCode 9](https://leetcode.com/problems/palindrome-number/)
 
@@ -195,6 +195,15 @@ the integer. The digits are ordered from most significant to the least significa
 integer does not contain any leading `0`'s.
 
 Increment the large integer by one and return the resulting array of digits.
+
+## [Primes in Diagonal](solutions/primes_in_diagonals.py)
+
+[LeetCode 2614](https://leetcode.com/problems/prime-in-diagonal/description/)
+
+You are given a 0-indexed two-dimensional integer array `nums`.
+
+Return the largest **prime** number that lies on at least one of the **diagonals** of `nums`. In case, no prime is 
+present on any of the diagonals, return 0.
 
 ## [Roman to Integer](solutions/roman_to_int.py)
 
