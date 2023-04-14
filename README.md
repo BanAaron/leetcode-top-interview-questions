@@ -32,6 +32,18 @@ in which each letter in the plaintext is replaced by a letter some fixed number 
 
 In this example we use the increment of 1. A will become B, B will be become C and so on.
 
+## [Check Whether Two Strings are Almost Equivalent](solutions/check_almost_equivalent.py)
+
+[LeetCode 2068](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/)
+
+Two strings `word1` and `word2` are considered almost equivalent if the differences between the frequencies of each 
+letter from `a` to `z` between `word1` and `word2` is at **most** `3`.
+
+Given two strings `word1` and `word2`, each of length `n`, return `true` if `word1` and `word2` are almost equivalent, or false 
+otherwise.
+
+The **frequency** of a letter `x` is the number of times it occurs in the string.
+
 ## [Count the Number of Vowel Strings in Range](solutions/count_number_of_vowel_strings_in_range.py)
 
 [LeetCode 2586](https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/description/)
