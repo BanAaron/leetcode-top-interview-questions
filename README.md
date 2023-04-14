@@ -62,6 +62,18 @@ Return the number of vowel strings `words[i]` where `i` belongs to the inclusive
 Given two strings `needle` and `haystack`, return the index of the first occurrence of `needle` in `haystack`, or `-1` 
 if `needle` is not part of `haystack`.
 
+## [Find the Longest Balanced Substring of a Binary String](solutions/find_the_longest_balanced_substring.py)
+
+[LeetCode 2609](https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/description/)
+
+You are given a binary string `s` consisting only of zeroes and ones.
+
+A substring of `s` is considered balanced if all zeroes are before ones and the number of zeroes is equal to the number of ones inside the substring. Notice that the empty substring is considered a balanced substring.
+
+Return the length of the longest balanced substring of `s`.
+
+A substring is a contiguous sequence of characters within a string.
+
 ## [Fizz Buzz](solutions/fizz_buzz.py)
 
 [LeetCode 412](https://leetcode.com/problems/fizz-buzz/)
