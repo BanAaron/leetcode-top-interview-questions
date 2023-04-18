@@ -1,8 +1,8 @@
 # Code Challenges
 
-This is a collection of programming challenges I have completed. Mainly from LeetCode and interview question practice.
+This is a collection of programming challenges I have completed. Mainly from LeetCode, Codewarsa and interview question practice.
 
-Python is my language of choice.
+Python is my language of choice 🐍
 
 `<<<<<<:>~`
 
