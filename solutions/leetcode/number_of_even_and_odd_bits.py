@@ -14,7 +14,7 @@ class Solution:
         return [evens, odds]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     s.evenOddBit(17)
     s.evenOddBit(2)

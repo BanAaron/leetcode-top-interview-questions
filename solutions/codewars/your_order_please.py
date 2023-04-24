@@ -14,7 +14,9 @@ def order(sentence: str) -> str:
 
     # we create a list comprehension out of our dictionary in sorted() order.
     # then simply join() the list together with a space for the final output
-    return " ".join([value for key, value in sorted(storage.items(), key=lambda x: x[0])])
+    return " ".join(
+        [value for key, value in sorted(storage.items(), key=lambda x: x[0])]
+    )
 
 
 if __name__ == "__main__":

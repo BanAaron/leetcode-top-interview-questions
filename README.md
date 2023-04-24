@@ -10,13 +10,13 @@ Python is my language of choice 🐍
 
 ## LeetCode
 
-### [Add Binary](solutions/add_binary.py)
+### [Add Binary](solutions/leetcode/add_binary.py)
 
 [LeetCode 67](https://leetcode.com/problems/add-binary/)
 
 Given two binary strings `a` and `b`, return their sum as a **binary string**.
 
-### [Best Time to Buy and Sell Stock](solutions/best_time_to_buy_and_sell_stock.py)
+### [Best Time to Buy and Sell Stock](solutions/leetcode/best_time_to_buy_and_sell_stock.py)
 
 [LeetCode 121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
@@ -27,14 +27,14 @@ to sell that stock.
 
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
-### [Caesar's Cipher](solutions/caesars_cipher.py)
+### [Caesar's Cipher](solutions/leetcode/caesars_cipher.py)
 
 Caesar's Cipher is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher 
 in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet.
 
 In this example we use the increment of 1. A will become B, B will be become C and so on.
 
-### [Check Whether Two Strings are Almost Equivalent](solutions/check_almost_equivalent.py)
+### [Check Whether Two Strings are Almost Equivalent](solutions/leetcode/check_almost_equivalent.py)
 
 [LeetCode 2068](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/)
 
@@ -46,7 +46,7 @@ otherwise.
 
 The **frequency** of a letter `x` is the number of times it occurs in the string.
 
-### [Count the Number of Vowel Strings in Range](solutions/count_number_of_vowel_strings_in_range.py)
+### [Count the Number of Vowel Strings in Range](solutions/leetcode/count_number_of_vowel_strings_in_range.py)
 
 [LeetCode 2586](https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/description/)
 
@@ -57,14 +57,14 @@ characters are `'a', 'e', 'i', 'o', 'u'`.
 
 Return the number of vowel strings `words[i]` where `i` belongs to the inclusive range `[left, right]`.
 
-### [Find the Index of the First Occurrence in a String](solutions/find_the_index_of_the_first_occurrence_in_a_string.py)
+### [Find the Index of the First Occurrence in a String](solutions/leetcode/find_the_index_of_the_first_occurrence_in_a_string.py)
 
 [LeetCode 28](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
 
 Given two strings `needle` and `haystack`, return the index of the first occurrence of `needle` in `haystack`, or `-1` 
 if `needle` is not part of `haystack`.
 
-### [Find the Longest Balanced Substring of a Binary String](solutions/find_the_longest_balanced_substring.py)
+### [Find the Longest Balanced Substring of a Binary String](solutions/leetcode/find_the_longest_balanced_substring.py)
 
 [LeetCode 2609](https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/description/)
 
@@ -76,7 +76,7 @@ Return the length of the longest balanced substring of `s`.
 
 A substring is a contiguous sequence of characters within a string.
 
-### [Fizz Buzz](solutions/fizz_buzz.py)
+### [Fizz Buzz](solutions/leetcode/fizz_buzz.py)
 
 [LeetCode 412](https://leetcode.com/problems/fizz-buzz/)
 
@@ -87,14 +87,14 @@ Given an integer n, return a string array answer (1-indexed) where:
 - `answer[i] == "Buzz"` if `i` is divisible by `5`.
 - `answer[i] == i` (as a string) if none of the above conditions are true.
 
-### [Form Smallest Number from Two Digit Arrays](solutions/form_smallest_number_from_two_digit_arrays.py)
+### [Form Smallest Number from Two Digit Arrays](solutions/leetcode/form_smallest_number_from_two_digit_arrays.py)
 
 [LeetCode 2605](https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/submissions/927517269/)
 
 Given two arrays of unique digits `nums1` and `nums2`, return the **smallest** number that contains **at least** one 
 digit from each array.
 
-### [K Items With the Maximum Sum](solutions/k_items_with_the_maximum_sum.py)
+### [K Items With the Maximum Sum](solutions/leetcode/k_items_with_the_maximum_sum.py)
 
 [LeetCode 2600](https://leetcode.com/problems/k-items-with-the-maximum-sum/description/)
 
@@ -111,7 +111,7 @@ The bag initially contains:
 We want to pick exactly `k` items among the available items. Return the **maximum** possible sum of numbers written on 
 the items.
 
-### [Left and Right Sum Difference](solutions/left_right_sum_differences.py)
+### [Left and Right Sum Difference](solutions/leetcode/left_right_sum_differences.py)
 
 [LeetCode 2574](https://leetcode.com/problems/left-and-right-sum-differences/description/)
 
@@ -133,7 +133,7 @@ Return the array `answer`.
 
 ![Professionally drawn illustration](https://i.imgur.com/BK1Znxv.png)
 
-### [Length of Last Word](solutions/length_of_last_word.py)
+### [Length of Last Word](solutions/leetcode/length_of_last_word.py)
 
 [LeetCode 58](https://leetcode.com/problems/length-of-last-word/description/)
 
@@ -141,7 +141,7 @@ Given a string `s` consisting of words and spaces, return the length of the **la
 
 A word is a maximal substring consisting of non-space characters only.
 
-### [Longest Common Prefix](solutions/longest_common_prefix.py)
+### [Longest Common Prefix](solutions/leetcode/longest_common_prefix.py)
 
 [LeetCode 14](https://leetcode.com/problems/longest-common-prefix/)
 
@@ -149,14 +149,14 @@ Write a function to find the longest common prefix string amongst an array of st
 
 If there is no common prefix, return an empty string "".
 
-### [Maximum Count of Positive and Negative Integer](solutions/maximum_count_of_positive_and_negative_integer.py)
+### [Maximum Count of Positive and Negative Integer](solutions/leetcode/maximum_count_of_positive_and_negative_integer.py)
 
 [LeetCode 2529](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/submissions/928460829/)
 
 Given an array `nums` sorted in non-decreasing order, return the **maximum** between the number of positive integers and
 the number of negative integers.
 
-### [Maximum Depth of Binary Tree](solutions/max_depth_binary_tree.py)
+### [Maximum Depth of Binary Tree](solutions/leetcode/max_depth_binary_tree.py)
 
 [LeetCode 104](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
 
@@ -165,7 +165,7 @@ Given the root of a binary tree, return its maximum depth.
 A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest 
 leaf node.
 
-### [Maximum Difference by Remapping a Digit](solutions/maximum_difference_by_remapping_a_digit.py)
+### [Maximum Difference by Remapping a Digit](solutions/leetcode/maximum_difference_by_remapping_a_digit.py)
  
 [LeetCode 2566](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/description/)
 
@@ -181,7 +181,7 @@ Return the difference between the maximum and minimum values Danny can make by r
 * Danny can remap different digits for obtaining minimum and maximum values respectively.
 * The resulting number after remapping can contain leading zeroes.
 
-### [Merge Two 2D Arrays by Summing Values](solutions/merge_two_2d_arrays_by_summing-values.py)
+### [Merge Two 2D Arrays by Summing Values](solutions/leetcode/merge_two_2d_arrays_by_summing-values.py)
 
 [LeetCode 2570](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)
 
@@ -194,7 +194,7 @@ Merge the two arrays into one array that is sorted in ascending order by id, res
 
 Return the resulting array. The returned array must be sorted in ascending order by id.
 
-### [Number of Even and Odd Bits](solutions/number_of_even_and_odd_bits.py)
+### [Number of Even and Odd Bits](solutions/leetcode/number_of_even_and_odd_bits.py)
 
 [LeetCode 2595](https://leetcode.com/problems/number-of-even-and-odd-bits/)
 
@@ -206,13 +206,13 @@ Let `odd` denote the number of odd indices in the binary representation of `n` (
 
 Return an integer array `answer` where `answer = [even, odd]`.
 
-##[Palindrome Number](solutions/palindrome_number.py)
+## [Palindrome Number](solutions/leetcode/palindrome_number.py)
 
 [LeetCode 9](https://leetcode.com/problems/palindrome-number/)
 
 Given an integer `x`, return `true` if `x` is a palindrome, and false otherwise.
 
-### [Plus One](solutions/plus_one.py)
+### [Plus One](solutions/leetcode/plus_one.py)
 
 [Leet Code 66](https://leetcode.com/problems/plus-one/description/)
 
@@ -222,7 +222,7 @@ integer does not contain any leading `0`'s.
 
 Increment the large integer by one and return the resulting array of digits.
 
-### [Primes in Diagonal](solutions/primes_in_diagonals.py)
+### [Primes in Diagonal](solutions/leetcode/primes_in_diagonals.py)
 
 [LeetCode 2614](https://leetcode.com/problems/prime-in-diagonal/description/)
 
@@ -231,7 +231,7 @@ You are given a 0-indexed two-dimensional integer array `nums`.
 Return the largest **prime** number that lies on at least one of the **diagonals** of `nums`. In case, no prime is 
 present on any of the diagonals, return 0.
 
-### [Remove Stars from a String](solutions/remove_stars_from_a_string.py)
+### [Remove Stars from a String](solutions/leetcode/remove_stars_from_a_string.py)
 
 [LeetCode 2390](https://leetcode.com/problems/removing-stars-from-a-string/description/)
 
@@ -244,7 +244,7 @@ In one operation, you can:
 
 Return the string after all stars have been removed.
 
-### [Roman to Integer](solutions/roman_to_int.py)
+### [Roman to Integer](solutions/leetcode/roman_to_int.py)
 
 [LeetCode 13](https://leetcode.com/problems/roman-to-integer/description/)
 
@@ -261,7 +261,7 @@ D            500
 M            1000
 ```
 
-### [Split With Minimum Sum](solutions/split_with_minimum_sum.py)
+### [Split With Minimum Sum](solutions/leetcode/split_with_minimum_sum.py)
 
 [LeetCode 2578](https://leetcode.com/problems/split-with-minimum-sum/)
 
@@ -271,7 +271,7 @@ Given a positive integer `num`, split it into two non-negative integers `num1` a
 
 Return the **minimum** possible sum of `num1` and `num2`
 
-### [Two Sum](solutions/two_sum.py)
+### [Two Sum](solutions/leetcode/two_sum.py)
 
 [Twos Sum](https://leetcode.com/problems/two-sum/) is a problem in where you are given an array of integers `nums` and 
 an integer `target`, then return indices of the two numbers such that they add up to `target`.
@@ -279,7 +279,7 @@ an integer `target`, then return indices of the two numbers such that they add u
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
 
-### [Valid Parentheses](solutions/valid_parentheses.py)
+### [Valid Parentheses](solutions/leetcode/valid_parentheses.py)
 
 [LeetCode 20](https://leetcode.com/problems/valid-parentheses/)
 
@@ -293,7 +293,7 @@ An input string is valid if:
 
 ## Codewars
 
-## [Your order, please](solutions/your_order_please.py)
+## [Your order, please](solutions/codewars/your_order_please.py)
 
 [Codewars Link](https://www.codewars.com/kata/55c45be3b2079eccff00010f)
 

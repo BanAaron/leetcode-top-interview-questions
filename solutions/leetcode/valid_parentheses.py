@@ -7,7 +7,7 @@ class Solution:
             stack += char
             if char in ")]}":
                 # if the final two characters are a valid pair of brackets
-                if stack[len(stack) - 2:] in valid_brackets:
+                if stack[len(stack) - 2 :] in valid_brackets:
                     # remove final two characters
                     stack = stack[:-2]
 

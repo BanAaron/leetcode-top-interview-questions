@@ -1,22 +1,10 @@
-# def two_sum(nums: list[int], target: int) -> list[int]:
-#     answer = []
-#     for x, number in enumerate(nums):
-#         for y, num in enumerate(nums):
-#             if number == num and x == y:
-#                 pass
-#             elif number + num == target:
-#                 answer = [x, y]
-#                 break
-#     return answer
-
-
 class Solution:
     def two_sum(self, nums: list[int], target: int) -> list[int]:
         store = {}
 
-        # leep through nums
+        # loop through nums
         for index, number in enumerate(nums):
-            # if our target - the current number exists in our store then we can just return the the result
+            # if our target - the current number exists in our store then we can just return the result
             if target - number in store:
                 return [store[target - number], index]
             # otherwise store the value and move on
