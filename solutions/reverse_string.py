@@ -3,4 +3,5 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
+        # [:] gives a copy of the whole string in place
         s[:] = reversed(s)
