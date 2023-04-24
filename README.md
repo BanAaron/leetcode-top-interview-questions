@@ -1,6 +1,6 @@
 # Code Challenges
 
-Solutions to Leetcode top interview questions. Python is my language of choice 🐍.
+My solutions to Leetcode top interview questions. Python is my language of choice 🐍.
 
 `<<<<<<:>~`
 
@@ -296,6 +296,38 @@ class Solution:
         else:
             digits[-1] += 1
         return digits
+```
+
+</details>
+
+## Best Time to Buy and Sell Stock
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+
+You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day.
+
+You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future 
+to sell that stock.
+
+Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return `0`.
+
+### [Solution](solutions/best_time_to_buy_and_sell_stock.py)
+
+<details>
+
+```python
+class Solution:
+    def maxProfit(self, prices: list[int]) -> int:
+        max_profit = 0
+        min_purchase = prices[0]
+
+        for price in prices:
+            max_profit = max(max_profit, price - min_purchase)
+            min_purchase = min(min_purchase, price)
+
+        return max_profit
 ```
 
 </details>
