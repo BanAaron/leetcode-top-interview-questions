@@ -1,6 +1,6 @@
 # Code Challenges
 
-My solutions to Leetcode top interview questions. Python is my language of choice 🐍. Comments explaining each solution
+My solutions to [Leetcode top interview questions](https://leetcode.com/problemset/all/?listId=wpwgkgt&page=1&sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D). Python is my language of choice 🐍. Comments explaining each solution
 are in the corresponding `solutions/something.py` file.
 
 `<<<<<<:>~`
