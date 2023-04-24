@@ -130,3 +130,6 @@ dmypy.json
 
 # .idea
 /.idea
+
+# markdown dummy template
+dummy.md

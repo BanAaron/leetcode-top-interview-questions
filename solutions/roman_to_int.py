@@ -8,7 +8,7 @@ class Solution:
         def add(number):
             self.answer += number
 
-        # inelegantly replace special cases with simplified versions. IV (4) becomes IIII (1,1,1,1) etc
+        # inelegantly replace all the edge special cases with simplified versions. IV (4) becomes IIII (1,1,1,1) etc
         chars = (
             chars.replace("IV", "IIII")
             .replace("IX", "VIIII")
@@ -37,10 +37,3 @@ class Solution:
                     add(1000)
 
         return self.answer
-
-
-if __name__ == "__main__":
-    s = Solution()
-    print(s.romanToInt("III"))
-    print(s.romanToInt("LVIII"))
-    print(s.romanToInt("MCMXCIV"))

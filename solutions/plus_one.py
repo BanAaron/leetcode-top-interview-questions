@@ -11,8 +11,3 @@ class Solution:
         else:
             digits[-1] += 1
         return digits
-
-
-if __name__ == "__main__":
-    s = Solution()
-    s.plusOne([1, 2, 0])
