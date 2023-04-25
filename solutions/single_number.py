@@ -1,6 +1,7 @@
 class Solution:
     def singleNumber(self, nums: list[int]) -> int:
         from collections import Counter
+
         # Counter is basically a dictionary that only counts occurrences in a string/list
         # we create a counter using our list of numbers
         count = Counter(nums)

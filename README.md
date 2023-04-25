@@ -585,6 +585,31 @@ class Solution:
 
 </details>
 
+## Majority Element
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/majority-element/)
+
+Given an array `nums` of size `n`, return the majority element.
+
+The majority element is the element that appears more than `⌊n / 2⌋` times. You may assume that the majority element 
+always exists in the array.
+
+### [Solution](solutions/majority_element.py)
+
+<details>
+
+```python
+class Solution:
+    def majorityElement(self, nums: list[int]) -> int:
+        from collections import Counter
+        count = Counter(nums)
+        return [x for x in count if count[x] > len(nums) / 2][0]
+```
+
+</details>
+
 ## Reverse String 
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
