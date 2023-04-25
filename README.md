@@ -411,14 +411,14 @@ returns `[1, 3, 2]`
     
 ```python
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
 class Solution:
-    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def inorderTraversal(self, root: [TreeNode]) -> list[int]:
         res = []
         stack = []
 
@@ -456,13 +456,13 @@ leaf node.
 ```python
     
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 class Solution:
-    def maxDepth(self, root: Optional[TreeNode]) -> int:
+    def maxDepth(self, root: [TreeNode]) -> int:
         if not root:
             return 0
 
@@ -499,6 +499,30 @@ class Solution:
             min_purchase = min(min_purchase, price)
 
         return max_profit
+```
+
+</details>
+
+## Valid Palindrome
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/valid-palindrome/description/)
+
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all 
+non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+
+Given a string `s`, return `true` if it is a palindrome, or `false` otherwise.
+
+### [Solution](solutions/valid_palindrome.py)
+
+<details>
+
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        s = ("".join(filter(str.isalnum, s))).lower()
+        return s == s[::-1]
 ```
 
 </details>
