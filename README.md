@@ -1,7 +1,8 @@
 # Code Challenges
 
-My solutions to [Leetcode top interview questions](https://leetcode.com/problemset/all/?listId=wpwgkgt&page=1&sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D). Python is my language of choice 🐍. Comments explaining each solution
-are in the corresponding `solutions/something.py` file. You can click on `Solution` in each section to jump directly to the file.
+My solutions to [Leetcode top interview questions](https://shorturl.at/rCMR3). Python is my language of choice 🐍. 
+Comments explaining each solution are in the corresponding `solutions/something.py` file. You can click on `Solution` 
+in each section to jump directly to the file.
 
 `<<<<<<:>~`
 
@@ -307,7 +308,8 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/sqrtx/)
 
-Given a non-negative integer `x`, return the square root of `x` rounded down to the nearest integer. The returned integer should be non-negative as well.
+Given a non-negative integer `x`, return the square root of `x` rounded down to the nearest integer. The returned 
+integer should be non-negative as well.
 
 You must not use any built-in exponent function or operator.
 
@@ -355,6 +357,36 @@ class Solution:
         for i in range(3, n + 1):
             a = (a[1], a[0] + a[1])
         return a[1]
+```
+
+</details>
+
+## Merge Sorted Array
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/merge-sorted-array/)
+
+You are given two integer arrays `nums1` and `nums2`, sorted in non-decreasing order, and two integers `m` and `n`, 
+representing the number of elements in `nums1` and `nums2` respectively.
+
+Merge `nums1` and `nums2` into a single array sorted in non-decreasing order.
+
+The final sorted array should not be returned by the function, but instead be stored inside the array `nums1`. 
+To accommodate this, `nums1` has a length of `m + n`, where the first `m` elements denote the elements that should be 
+merged, and the last `n` elements are set to `0` and should be ignored. `nums2` has a length of `n`.
+
+### [Solution](solutions/merge_sorted_array.py)
+
+<details>
+
+```python
+class Solution:
+    def merge(self, nums1: list[int], m: int, nums2: list[int], n: int) -> None:
+        """
+        Do not return anything, modify nums1 in-place instead.
+        """
+        nums1[:] = sorted(nums1[:m] + nums2[:n])
 ```
 
 </details>
