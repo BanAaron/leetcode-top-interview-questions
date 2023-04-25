@@ -301,6 +301,37 @@ class Solution:
 
 </details>
 
+## sqrt(x)
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/sqrtx/)
+
+Given a non-negative integer `x`, return the square root of `x` rounded down to the nearest integer. The returned integer should be non-negative as well.
+
+You must not use any built-in exponent function or operator.
+
+- For example, do not use `pow(x, 0.5)` in c++ or `x ** 0.5` in python.
+
+### [Solution](solutions/sqrt.py)
+
+<details>
+
+```python
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        if x == 0:
+            return 0
+        last_guess = x / 2.0
+        while True:
+            guess = (last_guess + x / last_guess) / 2
+            if abs(guess - last_guess) < 0.000001:
+                return int(guess)
+            last_guess = guess
+```
+
+</details>
+
 ## Best Time to Buy and Sell Stock
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
@@ -351,6 +382,41 @@ You must do this by modifying the input array in-place with `O(1)` extra memory.
 class Solution:
     def reverseString(self, s: list[str]) -> None:
         s[:] = reversed(s)
+```
+
+</details>
+
+## Fizz Buzz
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/fizz-buzz/)
+
+Given an integer `n`, return a string array `answer` (1-indexed) where:
+
+- `answer[i] == "FizzBuzz"` if `i` is divisible by 3 and 5.
+- `answer[i] == "Fizz"` if `i` is divisible by 3.
+- `answer[i] == "Buzz"` if `i` is divisible by 5.
+- `answer[i] == i` (as a string) if none of the above conditions are true.
+
+### [Solution](solutions/fizz_buzz.py)
+
+<details>
+
+```python
+class Solution:
+    def fizzBuzz(self, n: int) -> list[str]:
+        answer = []
+        for x in range(1, n + 1): 
+            if x % 3 == 0 and x % 5 == 0:
+                answer.append("FizzBuzz")
+            elif x % 5 == 0:
+                answer.append("Buzz")
+            elif x % 3 == 0:
+                answer.append("Fizz")
+            else:
+                answer.append(str(x))
+        return answer
 ```
 
 </details>
