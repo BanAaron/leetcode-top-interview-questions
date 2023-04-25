@@ -332,6 +332,33 @@ class Solution:
 
 </details>
 
+## Climbing Stairs
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/climbing-stairs/)
+
+You are climbing a staircase. It takes `n` steps to reach the top.
+
+Each time you can either climb `1` or `2` steps. In how many distinct ways can you climb to the top?
+
+### [Solution](solutions/climbing_stairs.py)
+
+<details>
+
+```python
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        if n <= 3:
+            return n
+        a = (1, 2)
+        for i in range(3, n + 1):
+            a = (a[1], a[0] + a[1])
+        return a[1]
+```
+
+</details>
+
 ## Best Time to Buy and Sell Stock
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
