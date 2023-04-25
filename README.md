@@ -391,6 +391,31 @@ class Solution:
 
 </details>
 
+## Binary Tree Inorder Traversal
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
+
+Given the `root` of a binary tree, return the inorder traversal of its nodes' values. 
+
+Example:
+
+![Binary Tree Example](https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg)
+
+returns `[1, 3, 2]`
+
+### [Solution](solutions/binary_tree_inorder_traversal.py)
+
+<details>
+
+```python
+
+```
+
+</details>
+
+
 ## Best Time to Buy and Sell Stock
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")

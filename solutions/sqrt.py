@@ -13,3 +13,4 @@ class Solution:
 
 # I honestly don't understand how this works. All credit goes to tzot on stack overflow:
 # https://stackoverflow.com/a/3047531/4698121
+# It appears to be Babylonian Method https://www.wikiwand.com/en/Methods_of_computing_square_roots#Babylonian_method
