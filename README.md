@@ -401,7 +401,7 @@ Given the `root` of a binary tree, return the inorder traversal of its nodes' va
 
 Example:
 
-![Binary Tree Example](https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg)
+![Binary tree example: 1 -> 2 -> 3](https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg "Binary Tree Diagram")
 
 returns `[1, 3, 2]`
 
@@ -470,6 +470,40 @@ class Solution:
 ```
 
 </details>
+
+## Pascal's Triangle
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/pascals-triangle/description/)
+
+Given an integer `numRows`, return the first `numRows` of Pascal's triangle.
+
+In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
+
+![Pascal's Triangle](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif "A gift showing the process to solve Pascal's Triangle")
+
+### [Solution](solutions/pascals_triangle.py)
+
+<details>
+
+```python
+class Solution:
+    def generate(self, num_rows: int) -> list[list[int]]:
+        result = [[1]]
+
+        for x in range(num_rows - 1):
+            temp_list = [0] + result[-1] + [0]
+            next_row = []
+            for j in range(len(result[-1]) + 1):
+                next_row.append(temp_list[j] + temp_list[j + 1])
+            result.append(next_row)
+
+        return result
+```
+
+</details>
+
 
 ## Best Time to Buy and Sell Stock
 
