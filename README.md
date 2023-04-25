@@ -527,6 +527,30 @@ class Solution:
 
 </details>
 
+## Single Number
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/single-number/description/)
+
+Given a non-empty array of integers `nums`, every element appears twice except for one. Find that single one.
+
+You must implement a solution with a linear runtime complexity and use only constant extra space.
+
+### [Solution](solutions/single_number.py)
+
+<details>
+
+```python
+class Solution:
+    def singleNumber(self, nums: list[int]) -> int:
+        from collections import Counter
+        count = Counter(nums)
+        return [int(x) for x in count if count[x] != 2][0]
+```
+
+</details>
+
 ## Reverse String 
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
