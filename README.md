@@ -610,6 +610,54 @@ class Solution:
 
 </details>
 
+## Excel Sheet Column Number
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/excel-sheet-column-number/)
+
+Given a string `columnTitle` that represents the column title as appears in an Excel sheet, return its corresponding 
+column number.
+
+For example:
+
+```text
+A -> 1
+B -> 2
+C -> 3
+...
+Z -> 26
+AA -> 27
+AB -> 28 
+...
+```
+
+### [Solution](solutions/title_to_number.py)
+
+<details>
+
+```python
+class Solution:
+    def titleToNumber(self, column_title: str) -> int:
+        from string import ascii_uppercase
+        from collections import defaultdict
+        score = 0
+        letter_values = defaultdict()
+
+        for i, char in enumerate(ascii_uppercase):
+            letter_values[char] = i + 1
+
+        for i, char in enumerate(column_title[::-1]):
+            if i == 0:
+                score += letter_values[char]
+            else:
+                score += letter_values[char] * 26 ** i
+
+        return score
+```
+
+</details>
+
 ## Reverse String 
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
