@@ -658,6 +658,29 @@ class Solution:
 
 </details>
 
+## Reverse Bits
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/reverse-bits/)
+
+Reverse bits of a given 32 bits unsigned integer.
+
+### [Solution](solutions/reverse_bits.py)
+
+<details>
+
+```python
+class Solution:
+    def reverseBits(self, n: int) -> int:
+        n = bin(n)[2:]
+        n = str(n).zfill(32)
+        n = n[::-1]
+        return int(n, 2)
+```
+
+</details>
+
 ## Reverse String 
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
