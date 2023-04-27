@@ -723,17 +723,17 @@ Given an integer `n`, return a string array `answer` (1-indexed) where:
 ```python
 class Solution:
     def fizzBuzz(self, n: int) -> list[str]:
-        answer = []
-        for x in range(1, n + 1): 
-            if x % 3 == 0 and x % 5 == 0:
-                answer.append("FizzBuzz")
-            elif x % 5 == 0:
-                answer.append("Buzz")
-            elif x % 3 == 0:
-                answer.append("Fizz")
-            else:
-                answer.append(str(x))
-        return answer
+        result = []
+        rules = {3: "Fizz", 5: "Buzz"}
+
+        for x in range(1, n + 1):
+            answer = ""
+            for key, value in rules.items():
+                if x % key == 0:
+                    answer += value
+            result.append(answer or str(x))
+            
+        return result
 ```
 
 </details>
