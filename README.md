@@ -1,6 +1,6 @@
 # Code Challenges
 
-My solutions to [Leetcode top interview questions](https://shorturl.at/rCMR3). Python is my language of choice 🐍. 
+My solutions to [Leetcode Top Interview Questions](https://shorturl.at/rCMR3). Python is my language of choice 🐍. 
 Comments explaining each solution are in the corresponding `solutions/something.py` file. You can click on `Solution` 
 in each section to jump directly to the file.
 
@@ -677,6 +677,27 @@ class Solution:
         n = str(n).zfill(32)
         n = n[::-1]
         return int(n, 2)
+```
+
+</details>
+
+## Number of 1 Bits
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/number-of-1-bits/)
+
+Write a function that takes the binary representation of an unsigned integer and returns the number of '1' bits it has 
+(also known as the [Hamming weight](https://www.wikiwand.com/en/Hamming_weight).)
+
+### [Solution](solutions/number_of_1_bits.py)
+
+<details>
+
+```python
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        return bin(n).count("1")
 ```
 
 </details>
