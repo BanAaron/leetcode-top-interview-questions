@@ -18,7 +18,7 @@ class Solution:
             return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.isHappy(19))
     print(s.isHappy(2))

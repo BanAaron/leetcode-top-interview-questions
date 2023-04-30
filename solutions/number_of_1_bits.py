@@ -7,6 +7,6 @@ class Solution:
         # return sum([int(x) for x in bin(n) if x == "1"])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.hammingWeight(11))
