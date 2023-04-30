@@ -763,6 +763,29 @@ class Solution:
 
 </details>
 
+## First Unique Character in a String
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/first-unique-character-in-a-string/)
+
+Given a string `s`, find the first non-repeating character in it and return its index. If it does not exist, return `-1`.
+
+### [Solution](solutions/first_unique_character_in_a_string.py)
+
+<details>
+
+```python
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        for i, char in enumerate(s):
+            if s.count(char) == 1:
+                return i
+        return -1
+```
+
+</details>
+
 ## Fizz Buzz
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
