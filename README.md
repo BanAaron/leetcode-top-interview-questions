@@ -747,6 +747,8 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/valid-anagram/description/)
 
+Given two strings `s` and `t`, return `true`if t is an anagram of `s`, and `false` otherwise.
+
 ### [Solution](solutions/valid_anagram.py)
 
 <details>
@@ -758,6 +760,32 @@ class Solution:
             return True
         else:
             return False
+```
+
+</details>
+
+## Missing Number
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/missing-number/)
+
+Given an array [nums] containing `n` distinct numbers in the range `[0, n]`, return the only number in the range that 
+is missing from the array.
+
+### [Solution](solutions/missing_number.py)
+
+<details>
+
+```python
+class Solution:
+    def missingNumber(self, nums: list[int]) -> int:
+        if nums == [0]:
+            return 1
+        for x in range(max(nums) + 1):
+            if x not in nums:
+                return x
+        return max(nums) + 1
 ```
 
 </details>
