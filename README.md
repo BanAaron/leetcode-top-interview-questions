@@ -741,6 +741,27 @@ class Solution:
 
 </details>
 
+## Valid Anagram
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/valid-anagram/description/)
+
+### [Solution](solutions/valid_anagram.py)
+
+<details>
+
+```python
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if sorted(s) == sorted(t):
+            return True
+        else:
+            return False
+```
+
+</details>
+
 ## Reverse String 
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
