@@ -1,8 +1,10 @@
 # Code Challenges
 
-My solutions to [Leetcode Top Interview Questions](https://shorturl.at/rCMR3). Python is my language of choice 🐍. 
-Comments explaining each solution are in the corresponding `solutions/something.py` file. You can click on `Solution` 
-in each section to jump directly to the file.
+My solutions to [Leetcode Top Interview Questions](https://shorturl.at/rCMR3). Python is my language of choice 🐍.
+
+Comments explaining each solution are in the corresponding `solutions/something.py` file.
+
+You can click on `Solution` in each section to jump directly to the file.
 
 `<<<<<<:>~`
 
