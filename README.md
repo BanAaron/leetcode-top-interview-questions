@@ -792,7 +792,7 @@ class Solution:
 
 </details>
 
-## Move Zeros
+## Move Zeroes
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
 
