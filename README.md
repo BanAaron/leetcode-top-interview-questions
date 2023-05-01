@@ -8,7 +8,7 @@ You can click on `Solution` in each section to jump directly to the file.
 
 `<<<<<<:>~`
 
-# Table of contents
+## Table of contents
 
 - [Easy](#two-sum)
   - [Two Sum](#two-sum)
