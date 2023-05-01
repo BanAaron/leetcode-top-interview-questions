@@ -900,3 +900,40 @@ class Solution:
 ```
 
 </details>
+
+## Longest Substring Without Repeating Characters
+
+![medium](https://img.shields.io/badge/-medium-yellow "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+
+Given a string `s`, find the length of the longest substring without repeating characters.
+
+### [Solution](solutions/longest_string_without_repeating_characters.py)
+
+<details>
+
+```python
+class Solution:
+    def lengthOfLongestSubstring(self, string: str) -> int:
+        if len(string) == 1:
+            return 1
+
+        seen = set()
+        longest = 0
+        substring = ""
+
+        for i, char in enumerate(string):
+            for char2 in string[i:]:
+                if char2 not in seen:
+                    seen.add(char2)
+                    substring += char2
+                elif char2 in seen:
+                    longest = max(longest, len(substring))
+                    seen.clear()
+                    substring = ""
+                    break
+        return longest
+```
+
+</details>
