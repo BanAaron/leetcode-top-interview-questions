@@ -8,6 +8,40 @@ You can click on `Solution` in each section to jump directly to the file.
 
 `<<<<<<:>~`
 
+# Table of contents
+
+- [Easy](#two-sum)
+  - [Two Sum](#two-sum)
+  - [Roman to Integer](#roman-to-integer)
+  - [Longest Common Prefix](#longest-common-prefix)
+  - [Valid Parentheses](#valid-parentheses)
+  - [Merge Two Sorted Lists](#merge-two-sorted-lists)
+  - [Remove Duplicates from Sorted Array](#remove-duplicates-from-sorted-array)
+  - [Find the Index of the First Occurrence in a String](#find-the-index-of-the-first-occurrence-in-a-string)
+  - [Plus One](#plus-one)
+  - [sqrt(x)](#sqrtx)
+  - [Climbing Stairs](#climbing-stairs)
+  - [Merge Sorted Array](#merge-sorted-array)
+  - [Binary Tree Inorder Traversal](#binary-tree-inorder-traversal)
+  - [Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)
+  - [Pascal's Triangle](#pascals-triangle)
+  - [Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)
+  - [Valid Palindrome](#valid-palindrome)
+  - [Single Number](#single-number)
+  - [Majority Element](#majority-element)
+  - [Excel Sheet Column Number](#excel-sheet-column-number)
+  - [Reverse Bits](#reverse-bits)
+  - [Number of 1 Bits](#number-of-1-bits)
+  - [Happy Number](#happy-number)
+  - [Valid Anagram](#valid-anagram)
+  - [Missing Number](#missing-number)
+  - [Move Zeroes](#move-zeroes)
+  - [Reverse String](#reverse-string)
+  - [First Unique Character in a String](#first-unique-character-in-a-string)
+  - [Fizz Buzz](#fizz-buzz)
+- [Medium](#longest-substring-without-repeating-characters)
+  - [Longest Substring Without Repeating Characters](#longest-substring-without-repeating-characters)
+
 ## Two Sum
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
