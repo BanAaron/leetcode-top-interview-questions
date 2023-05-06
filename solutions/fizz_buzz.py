@@ -1,28 +1,29 @@
 class Solution:
-    def fizzBuzz(self, n: int) -> list[str]:
-        # we will store our answer in result
+    def fizzBuzz(self, number: int) -> list[str]:
+        # store the outcome in result
         result = []
-        # dictionary containing our conditions
-        rules = {3: "Fizz", 5: "Buzz"}
+        # a dictionary to store our values to match on
+        rules = {
+            5: "Buzz",
+            3: "Fizz",
+        }
 
-        for x in range(1, n + 1):
-            # we will store each answer in this string
+        # loop through our number + 1 to make it inclusive
+        for n in range(1, number + 1):
             answer = ""
-            # loop through our dictionary
+            # loop through our rules
             for key, value in rules.items():
-                # if our number modulo key (6 % 3 for example) is equal to zero
-                if x % key == 0:
-                    # we can add the value from the dictionary to the answer
-                    # 3 = "Fizz" for example
+                # check if our number modulo the rule key is 0
+                if n % key == 0:
+                    # concatenate answer string with the value from the dictionary
                     answer += value
-            # after we are done checking against the dictionary we append the answer to our results
-            # (answer or str(x)) will append answer if it is not an empty string or append x as a string if answer is
-            # empty
-            result.append(answer or str(x))
+            # append the resulting answer to results OR n as a string if we haven't matched any cases and answer is
+            # an empty string
+            result.append(answer or str(n))
 
         return result
 
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.fizzBuzz(100))
+    print(s.fizzBuzz(101))
