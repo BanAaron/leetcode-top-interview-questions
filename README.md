@@ -474,6 +474,41 @@ class Solution:
 
 </details>
 
+## Convert Sorted Array to Binary Search Tree
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
+
+Given an integer array `nums` where the elements are sorted in asecnding order, convert it to a height-balanced search 
+tree. 
+
+### [Solution](solutions/convert_sorted_array_to_binary_search_tree.py)
+
+<details>
+
+```python
+from typing import Optional
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+        
+class Solution:
+    def sortedArrayToBST(self, nums: list[int]) -> Optional[TreeNode]:
+        if not nums:
+            return None
+        middle = len(nums) // 2
+        root_node = TreeNode(nums[middle])
+        root_node.left = self.sortedArrayToBST(nums[:middle])
+        root_node.right = self.sortedArrayToBST(nums[middle + 1:])
+        return root_node
+```
+
+</details>
+
 ## Maximum Depth of Binary Tree
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
@@ -482,7 +517,7 @@ class Solution:
 
 Given the `root` of a binary tree, return its maximum depth.
 
-A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest 
+A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest
 leaf node.
 
 ### [Solution](solutions/maximum_depth_of_binary_tree.py)
