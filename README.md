@@ -46,6 +46,7 @@ You can click on `Solution` in each section to jump directly to the file.
   - [Move Zeroes](#move-zeroes)
   - [Power of Three](#power-of-three)
   - [Reverse String](#reverse-string)
+  - [Intersection of Two Arrays II](#intersection-of-two-arrays-ii)
   - [First Unique Character in a String](#first-unique-character-in-a-string)
   - [Fizz Buzz](#fizz-buzz)
 - [Medium](#longest-substring-without-repeating-characters)
@@ -1043,6 +1044,37 @@ You must do this by modifying the input array in-place with `O(1)` extra memory.
 class Solution:
     def reverseString(self, s: list[str]) -> None:
         s[:] = reversed(s)
+```
+
+</details>
+
+## Intersection of Two Arrays II
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
+
+Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result must 
+appear as many times as it shows in both arrays and you may return the result in any order.
+
+### [Solution](solutions/intersection_of_two_arrays_ii.py)
+
+<details>
+
+```python
+class Solution:
+  def intersect(self, nums1: list[int], nums2: list[int]) -> list[int]:
+    from collections import Counter
+    counter1 = Counter(nums1)
+    counter2 = Counter(nums2)
+    result: list[int] = []
+    
+    for key, value in counter1.items():
+      if key in counter2:
+        min_count = min(value, counter2[key])
+        result.extend([key] * min_count)
+            
+    return result
 ```
 
 </details>
