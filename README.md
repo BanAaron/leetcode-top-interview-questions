@@ -892,12 +892,10 @@ Given the `head` of a singly linked list, return `true` if it is a palindrome or
 ```python
 from typing import Optional
 
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-
 
 class Solution:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
@@ -991,6 +989,25 @@ class Solution:
         for x in range(number_of_zeroes):
             nums.remove(0)
             nums.append(0)
+```
+
+</details>
+
+## Power of Three
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/power-of-three/)
+
+Give an integer `n`, return `true` if it is a power of three. Otherwise return `false`.
+
+An integer `n` is a power of three if there exists an integer `x` such that `n == 3x`.
+
+### [Solution](solutions/power_of_three.py) 
+
+<details>
+
+```python
 ```
 
 </details>
