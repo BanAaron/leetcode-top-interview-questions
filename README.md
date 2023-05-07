@@ -10,8 +10,7 @@ You can click on `Solution` in each section to jump directly to the file.
 
 ## Table of contents
 
-[//]: # (genereated with:)
-[//]: # (https://luciopaiva.com/markdown-toc/)
+[//]: # (genereated with: https://luciopaiva.com/markdown-toc/)
 
 - [Easy](#two-sum)
   - [Two Sum](#two-sum)
@@ -874,6 +873,46 @@ class Solution:
                 return True
             seen.add(number)
         return False
+```
+
+</details>
+
+## Palindrome Linked List
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/palindrome-linked-list/)
+
+Given the `head` of a singly linked list, return `true` if it is a palindrome or `false` otherwise.
+
+### [Solution](solutions/palindrome_linked_list.py) 
+
+<details>
+
+```python
+from typing import Optional
+
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
+class Solution:
+    def isPalindrome(self, head: Optional[ListNode]) -> bool:
+        if head is None:
+            return False
+
+        values = list()
+        while head is not None:
+            values.append(head.val)
+            head = head.next
+
+        if values == values[::-1]:
+            return True
+        else:
+            return False
 ```
 
 </details>
