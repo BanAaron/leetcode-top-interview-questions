@@ -10,6 +10,9 @@ You can click on `Solution` in each section to jump directly to the file.
 
 ## Table of contents
 
+[//]: # (genereated with:)
+[//]: # (https://luciopaiva.com/markdown-toc/)
+
 - [Easy](#two-sum)
   - [Two Sum](#two-sum)
   - [Roman to Integer](#roman-to-integer)
@@ -23,6 +26,7 @@ You can click on `Solution` in each section to jump directly to the file.
   - [Climbing Stairs](#climbing-stairs)
   - [Merge Sorted Array](#merge-sorted-array)
   - [Binary Tree Inorder Traversal](#binary-tree-inorder-traversal)
+  - [Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)
   - [Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)
   - [Pascal's Triangle](#pascals-triangle)
   - [Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)
@@ -33,6 +37,8 @@ You can click on `Solution` in each section to jump directly to the file.
   - [Reverse Bits](#reverse-bits)
   - [Number of 1 Bits](#number-of-1-bits)
   - [Happy Number](#happy-number)
+  - [Reverse Linked List](#reverse-linked-list)
+  - [Contains Duplicate](#contains-duplicate)
   - [Valid Anagram](#valid-anagram)
   - [Missing Number](#missing-number)
   - [Move Zeroes](#move-zeroes)
@@ -812,6 +818,66 @@ class Solution:
 
 </details>
 
+## Reverse Linked List
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/reverse-linked-list/)
+
+Given the `head` of a singly linked list, reverse the list, and return the reversed list.
+
+### [Solution](solutions/reverse_linked_list.py)
+
+<details>
+
+```python
+from typing import Optional
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+        
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        prev = None
+        curr = head
+        while curr:
+            next_node = curr.next
+            curr.next = prev
+            prev = curr
+            curr = next_node
+        return prev
+```
+
+</details>
+
+## Contains Duplicate
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/contains-duplicate/)
+
+Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if 
+every element is distinct.
+
+### [Solution](solutions/contains_duplicate.py) 
+
+<details>
+
+```python
+class Solution:
+    def containsDuplicate(self, nums: list[int]) -> bool:
+        seen = set()
+        for number in nums:
+            if number in seen:
+                return True
+            seen.add(number)
+        return False
+```
+
+</details>
+
 ## Valid Anagram
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
@@ -890,7 +956,7 @@ class Solution:
 
 </details>
 
-## Reverse String 
+## Reverse String
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
 
