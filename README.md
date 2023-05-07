@@ -12,6 +12,8 @@ You can click on `Solution` in each section to jump directly to the file.
 
 [//]: # (genereated with: https://luciopaiva.com/markdown-toc/)
 
+# Table of contents
+
 - [Easy](#two-sum)
   - [Two Sum](#two-sum)
   - [Roman to Integer](#roman-to-integer)
@@ -38,9 +40,11 @@ You can click on `Solution` in each section to jump directly to the file.
   - [Happy Number](#happy-number)
   - [Reverse Linked List](#reverse-linked-list)
   - [Contains Duplicate](#contains-duplicate)
+  - [Palindrome Linked List](#palindrome-linked-list)
   - [Valid Anagram](#valid-anagram)
   - [Missing Number](#missing-number)
   - [Move Zeroes](#move-zeroes)
+  - [Power of Three](#power-of-three)
   - [Reverse String](#reverse-string)
   - [First Unique Character in a String](#first-unique-character-in-a-string)
   - [Fizz Buzz](#fizz-buzz)
@@ -1008,6 +1012,15 @@ An integer `n` is a power of three if there exists an integer `x` such that `n =
 <details>
 
 ```python
+class Solution:
+    def isPowerOfThree(self, n: int) -> bool:
+        if n < 1:
+            return False
+
+        while n % 3 == 0:
+            n //= 3
+
+        return n == 1
 ```
 
 </details>
