@@ -6,5 +6,5 @@ class Solution:
 
         count = Counter(nums)
 
-        # we then return the value where the counter[x] value is greater than len(nums) / 2:w
+        # we then return the value where the counter[x] value is greater than len(nums) / 2
         return [x for x in count if count[x] > len(nums) / 2][0]
