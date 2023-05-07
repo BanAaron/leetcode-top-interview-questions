@@ -24,7 +24,7 @@ class Solution:
         root_node.left = self.sortedArrayToBST(nums[:middle])
 
         # same for the right but starting from the middle and going forwards
-        root_node.right = self.sortedArrayToBST(nums[middle + 1:])
+        root_node.right = self.sortedArrayToBST(nums[middle + 1 :])
 
         return root_node
 
