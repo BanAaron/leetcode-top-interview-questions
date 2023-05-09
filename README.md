@@ -15,43 +15,44 @@ You can click on `Solution` in each section to jump directly to the file.
 # Table of contents
 
 - [Easy](#two-sum)
-  - [Two Sum](#two-sum)
-  - [Roman to Integer](#roman-to-integer)
-  - [Longest Common Prefix](#longest-common-prefix)
-  - [Valid Parentheses](#valid-parentheses)
-  - [Merge Two Sorted Lists](#merge-two-sorted-lists)
-  - [Remove Duplicates from Sorted Array](#remove-duplicates-from-sorted-array)
-  - [Find the Index of the First Occurrence in a String](#find-the-index-of-the-first-occurrence-in-a-string)
-  - [Plus One](#plus-one)
-  - [sqrt(x)](#sqrtx)
-  - [Climbing Stairs](#climbing-stairs)
-  - [Merge Sorted Array](#merge-sorted-array)
-  - [Binary Tree In Order Traversal](#binary-tree-in-order-traversal)
-  - [Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)
-  - [Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)
-  - [Pascal's Triangle](#pascals-triangle)
-  - [Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)
-  - [Valid Palindrome](#valid-palindrome)
-  - [Single Number](#single-number)
-  - [Linked List Cycle](#linked-list-cycle)
-  - [Majority Element](#majority-element)
-  - [Excel Sheet Column Number](#excel-sheet-column-number)
-  - [Reverse Bits](#reverse-bits)
-  - [Number of 1 Bits](#number-of-1-bits)
-  - [Happy Number](#happy-number)
-  - [Reverse Linked List](#reverse-linked-list)
-  - [Contains Duplicate](#contains-duplicate)
-  - [Palindrome Linked List](#palindrome-linked-list)
-  - [Valid Anagram](#valid-anagram)
-  - [Missing Number](#missing-number)
-  - [Move Zeroes](#move-zeroes)
-  - [Power of Three](#power-of-three)
-  - [Reverse String](#reverse-string)
-  - [Intersection of Two Arrays II](#intersection-of-two-arrays-ii)
-  - [First Unique Character in a String](#first-unique-character-in-a-string)
-  - [Fizz Buzz](#fizz-buzz)
+    - [Two Sum](#two-sum)
+    - [Roman to Integer](#roman-to-integer)
+    - [Longest Common Prefix](#longest-common-prefix)
+    - [Valid Parentheses](#valid-parentheses)
+    - [Merge Two Sorted Lists](#merge-two-sorted-lists)
+    - [Remove Duplicates from Sorted Array](#remove-duplicates-from-sorted-array)
+    - [Find the Index of the First Occurrence in a String](#find-the-index-of-the-first-occurrence-in-a-string)
+    - [Plus One](#plus-one)
+    - [sqrt(x)](#sqrtx)
+    - [Climbing Stairs](#climbing-stairs)
+    - [Merge Sorted Array](#merge-sorted-array)
+    - [Binary Tree In Order Traversal](#binary-tree-in-order-traversal)
+    - [Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)
+    - [Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)
+    - [Pascal's Triangle](#pascals-triangle)
+    - [Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)
+    - [Valid Palindrome](#valid-palindrome)
+    - [Single Number](#single-number)
+    - [Linked List Cycle](#linked-list-cycle)
+    - [Intersection of Two Linked Lists](#intersection-of-two-linked-lists)
+    - [Majority Element](#majority-element)
+    - [Excel Sheet Column Number](#excel-sheet-column-number)
+    - [Reverse Bits](#reverse-bits)
+    - [Number of 1 Bits](#number-of-1-bits)
+    - [Happy Number](#happy-number)
+    - [Reverse Linked List](#reverse-linked-list)
+    - [Contains Duplicate](#contains-duplicate)
+    - [Palindrome Linked List](#palindrome-linked-list)
+    - [Valid Anagram](#valid-anagram)
+    - [Missing Number](#missing-number)
+    - [Move Zeroes](#move-zeroes)
+    - [Power of Three](#power-of-three)
+    - [Reverse String](#reverse-string)
+    - [Intersection of Two Arrays II](#intersection-of-two-arrays-ii)
+    - [First Unique Character in a String](#first-unique-character-in-a-string)
+    - [Fizz Buzz](#fizz-buzz)
 - [Medium](#longest-substring-without-repeating-characters)
-  - [Longest Substring Without Repeating Characters](#longest-substring-without-repeating-characters)
+    - [Longest Substring Without Repeating Characters](#longest-substring-without-repeating-characters)
 
 ## Two Sum
 
@@ -355,7 +356,7 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/sqrtx/)
 
-Given a non-negative integer `x`, return the square root of `x` rounded down to the nearest integer. The returned 
+Given a non-negative integer `x`, return the square root of `x` rounded down to the nearest integer. The returned
 integer should be non-negative as well.
 
 You must not use any built-in exponent function or operator.
@@ -414,13 +415,13 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/merge-sorted-array/)
 
-You are given two integer arrays `nums1` and `nums2`, sorted in non-decreasing order, and two integers `m` and `n`, 
+You are given two integer arrays `nums1` and `nums2`, sorted in non-decreasing order, and two integers `m` and `n`,
 representing the number of elements in `nums1` and `nums2` respectively.
 
 Merge `nums1` and `nums2` into a single array sorted in non-decreasing order.
 
-The final sorted array should not be returned by the function, but instead be stored inside the array `nums1`. 
-To accommodate this, `nums1` has a length of `m + n`, where the first `m` elements denote the elements that should be 
+The final sorted array should not be returned by the function, but instead be stored inside the array `nums1`.
+To accommodate this, `nums1` has a length of `m + n`, where the first `m` elements denote the elements that should be
 merged, and the last `n` elements are set to `0` and should be ignored. `nums2` has a length of `n`.
 
 ### [Solution](solutions/merge_sorted_array.py)
@@ -444,7 +445,7 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
 
-Given the `root` of a binary tree, return the inorder traversal of its nodes' values. 
+Given the `root` of a binary tree, return the inorder traversal of its nodes' values.
 
 Example:
 
@@ -455,7 +456,7 @@ returns `[1, 3, 2]`
 ### [Solution](solutions/binary_tree_inorder_traversal.py)
 
 <details>
-    
+
 ```python
 # Definition for a binary tree node.
 class TreeNode:
@@ -491,8 +492,8 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 
-Given an integer array `nums` where the elements are sorted in ascending order, convert it to a height-balanced search 
-tree. 
+Given an integer array `nums` where the elements are sorted in ascending order, convert it to a height-balanced search
+tree.
 
 ### [Solution](solutions/convert_sorted_array_to_binary_search_tree.py)
 
@@ -506,7 +507,7 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-        
+
 class Solution:
     def sortedArrayToBST(self, nums: list[int]) -> Optional[TreeNode]:
         if not nums:
@@ -536,7 +537,7 @@ leaf node.
 <details>
 
 ```python
-    
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -595,7 +596,7 @@ class Solution:
 
 You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day.
 
-You want to maximise your profit by choosing a single day to buy one stock and choosing a different day in the future 
+You want to maximise your profit by choosing a single day to buy one stock and choosing a different day in the future
 to sell that stock.
 
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return `0`.
@@ -625,7 +626,7 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/valid-palindrome/description/)
 
-A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all 
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all
 non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
 
 Given a string `s`, return `true` if it is a palindrome, or `false` otherwise.
@@ -675,7 +676,7 @@ class Solution:
 
 Given `head`, the head of a linked list, determine if the linked list has a cycle in it.
 
-There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following 
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following
 the `next pointer.
 
 Return `true` if there is a cycle in the linked list. Otherwise, return `false`.
@@ -688,13 +689,14 @@ Return `true` if there is a cycle in the linked list. Otherwise, return `false`.
 from typing import Optional
 
 class ListNode:
-  def __init__(self, x):
-    self.val = x
-    self.next = None
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         seen: list[ListNode] = []
+
         while head:
             if head in seen:
                 return True
@@ -702,6 +704,47 @@ class Solution:
             head = head.next
 
         return False
+```
+
+</details>
+
+## Intersection of Two Linked Lists
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/intersection-of-two-linked-lists/)
+
+Given the heads of two singly linked-lists `headA` and `headB`  , return the node at which the two lists intersect.
+If the two linked lists have no intersection at all, return `None`.
+
+### [Solution](solutions/intersection_of_two_linked_lists.py)
+
+<details>
+
+```python
+from typing import Optional
+
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+class Solution:
+    def getIntersectionNode(self, head_a: ListNode, head_b: ListNode) -> Optional[ListNode]:
+        seen: set[ListNode] = set()
+        current = head_a
+
+        while current:
+            seen.add(current)
+            current = current.next
+
+        current = head_b
+        while current:
+            if current in seen:
+                return current
+            current = current.next
+
+        return None
 ```
 
 </details>
@@ -714,7 +757,7 @@ class Solution:
 
 Given an array `nums` of size `n`, return the majority element.
 
-The majority element is the element that appears more than `⌊n / 2⌋` times. You may assume that the majority element 
+The majority element is the element that appears more than `⌊n / 2⌋` times. You may assume that the majority element
 always exists in the array.
 
 ### [Solution](solutions/majority_element.py)
@@ -737,7 +780,7 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/excel-sheet-column-number/)
 
-Given a string `columnTitle` that represents the column title as appears in an Excel sheet, return its corresponding 
+Given a string `columnTitle` that represents the column title as appears in an Excel sheet, return its corresponding
 column number.
 
 For example:
@@ -808,7 +851,7 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/number-of-1-bits/)
 
-Write a function that takes the binary representation of an unsigned integer and returns the number of '1' bits it has 
+Write a function that takes the binary representation of an unsigned integer and returns the number of '1' bits it has
 (also known as the [Hamming weight](https://www.wikiwand.com/en/Hamming_weight).)
 
 ### [Solution](solutions/number_of_1_bits.py)
@@ -881,7 +924,7 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-        
+
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         prev = None
@@ -902,10 +945,10 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/contains-duplicate/)
 
-Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if 
+Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if
 every element is distinct.
 
-### [Solution](solutions/contains_duplicate.py) 
+### [Solution](solutions/contains_duplicate.py)
 
 <details>
 
@@ -930,7 +973,7 @@ class Solution:
 
 Given the `head` of a singly linked list, return `true` if it is a palindrome or `false` otherwise.
 
-### [Solution](solutions/palindrome_linked_list.py) 
+### [Solution](solutions/palindrome_linked_list.py)
 
 <details>
 
@@ -989,7 +1032,7 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/missing-number/)
 
-Given an array [nums] containing `n` distinct numbers in the range `[0, n]`, return the only number in the range that 
+Given an array [nums] containing `n` distinct numbers in the range `[0, n]`, return the only number in the range that
 is missing from the array.
 
 ### [Solution](solutions/missing_number.py)
@@ -1015,7 +1058,7 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/move-zeroes/)
 
-Given an integer array `nums`, move all `0`'s to the end of it while maintaining the relative order of the non-zero 
+Given an integer array `nums`, move all `0`'s to the end of it while maintaining the relative order of the non-zero
 elements.
 
 Note that you must do this in-place without making a copy of the array.
@@ -1048,7 +1091,7 @@ Give an integer `n`, return `true` if it is a power of three. Otherwise, return 
 
 An integer `n` is a power of three if there exists an integer `x` such that `n == 3x`.
 
-### [Solution](solutions/power_of_three.py) 
+### [Solution](solutions/power_of_three.py)
 
 <details>
 
@@ -1094,7 +1137,7 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
 
-Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result must 
+Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result must
 appear as many times as it shows in both arrays, and you may return the result in any order.
 
 ### [Solution](solutions/intersection_of_two_arrays_ii.py)
@@ -1103,18 +1146,18 @@ appear as many times as it shows in both arrays, and you may return the result i
 
 ```python
 class Solution:
-  def intersect(self, nums1: list[int], nums2: list[int]) -> list[int]:
-    from collections import Counter
-    counter1 = Counter(nums1)
-    counter2 = Counter(nums2)
-    result: list[int] = []
-    
-    for key, value in counter1.items():
-      if key in counter2:
-        min_count = min(value, counter2[key])
-        result.extend([key] * min_count)
-            
-    return result
+    def intersect(self, nums1: list[int], nums2: list[int]) -> list[int]:
+        from collections import Counter
+        counter1 = Counter(nums1)
+        counter2 = Counter(nums2)
+        result: list[int] = []
+
+        for key, value in counter1.items():
+            if key in counter2:
+                min_count = min(value, counter2[key])
+                result.extend([key] * min_count)
+
+        return result
 ```
 
 </details>
@@ -1171,7 +1214,7 @@ class Solution:
                 if x % key == 0:
                     answer += value
             result.append(answer or str(x))
-            
+
         return result
 ```
 
