@@ -26,13 +26,14 @@ You can click on `Solution` in each section to jump directly to the file.
   - [sqrt(x)](#sqrtx)
   - [Climbing Stairs](#climbing-stairs)
   - [Merge Sorted Array](#merge-sorted-array)
-  - [Binary Tree Inorder Traversal](#binary-tree-inorder-traversal)
+  - [Binary Tree In Order Traversal](#binary-tree-in-order-traversal)
   - [Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)
   - [Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)
   - [Pascal's Triangle](#pascals-triangle)
   - [Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)
   - [Valid Palindrome](#valid-palindrome)
   - [Single Number](#single-number)
+  - [Linked List Cycle](#linked-list-cycle)
   - [Majority Element](#majority-element)
   - [Excel Sheet Column Number](#excel-sheet-column-number)
   - [Reverse Bits](#reverse-bits)
@@ -119,7 +120,7 @@ class Solution:
         def add(number):
             self.answer += number
 
-        # inelegantly replace all the edge special cases with simplified versions. IV (4) becomes IIII (1,1,1,1) etc
+        # inelegantly replace all special cases with simplified versions. IV (4) becomes IIII (1,1,1,1) etc
         chars = (
             chars.replace("IV", "IIII")
             .replace("IX", "VIIII")
@@ -437,7 +438,7 @@ class Solution:
 
 </details>
 
-## Binary Tree Inorder Traversal
+## Binary Tree In Order Traversal
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
 
@@ -490,7 +491,7 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 
-Given an integer array `nums` where the elements are sorted in asecnding order, convert it to a height-balanced search 
+Given an integer array `nums` where the elements are sorted in ascending order, convert it to a height-balanced search 
 tree. 
 
 ### [Solution](solutions/convert_sorted_array_to_binary_search_tree.py)
@@ -560,7 +561,7 @@ class Solution:
 
 Given an integer `numRows`, return the first `numRows` of Pascal's triangle.
 
-In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
+In Pascal's triangle, each number is the sum of the two numbers directly above it, as shown:
 
 ![Pascal's Triangle](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif "A gift showing the process to solve Pascal's Triangle")
 
@@ -594,7 +595,7 @@ class Solution:
 
 You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day.
 
-You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future 
+You want to maximise your profit by choosing a single day to buy one stock and choosing a different day in the future 
 to sell that stock.
 
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return `0`.
@@ -662,6 +663,45 @@ class Solution:
         from collections import Counter
         count = Counter(nums)
         return [int(x) for x in count if count[x] != 2][0]
+```
+
+</details>
+
+## Linked List Cycle
+
+![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/linked-list-cycle/)
+
+Given `head`, the head of a linked list, determine if the linked list has a cycle in it.
+
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following 
+the `next pointer.
+
+Return `true` if there is a cycle in the linked list. Otherwise, return `false`.
+
+### [Solution](solutions/linked_list_cycle.py)
+
+<details>
+
+```python
+from typing import Optional
+
+class ListNode:
+  def __init__(self, x):
+    self.val = x
+    self.next = None
+
+class Solution:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+        seen: list[ListNode] = []
+        while head:
+            if head in seen:
+                return True
+            seen.append(head)
+            head = head.next
+
+        return False
 ```
 
 </details>
@@ -793,7 +833,7 @@ Write an algorithm to determine if a number `n` is happy.
 
 A happy number is a number defined by the following process:
 
-- Starting with any positive integer, replace the number by the sum of the squares of its digits.
+- Starting with any positive integer, replace the number by the summed squares of its digits.
 - Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
 - Those numbers for which this process ends in 1 are happy.
 
@@ -1004,7 +1044,7 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/power-of-three/)
 
-Give an integer `n`, return `true` if it is a power of three. Otherwise return `false`.
+Give an integer `n`, return `true` if it is a power of three. Otherwise, return `false`.
 
 An integer `n` is a power of three if there exists an integer `x` such that `n == 3x`.
 
@@ -1055,7 +1095,7 @@ class Solution:
 ### [Problem](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
 
 Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result must 
-appear as many times as it shows in both arrays and you may return the result in any order.
+appear as many times as it shows in both arrays, and you may return the result in any order.
 
 ### [Solution](solutions/intersection_of_two_arrays_ii.py)
 
