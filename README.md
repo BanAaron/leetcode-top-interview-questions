@@ -56,6 +56,7 @@ You can click on `Solution` in each section to jump directly to the file.
   - [Longest Substring Without Repeating Characters](#longest-substring-without-repeating-characters)
   - [Longest Palindromic Substring](#longest-palindromic-substring)
   - [Reverse Integer](#reverse-integer)
+  - [String to Integer (atoi)](#string-to-integer-atoi)
 
 ## Two Sum
 
