@@ -1400,3 +1400,43 @@ class Solution:
 ```
 
 </details>
+
+## String to Integer (atoi)
+
+![medium](https://img.shields.io/badge/-medium-yellow "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/string-to-integer-atoi/)
+
+Implement the `myAtoi(string s)` function,
+which converts a string to a 32-bit signed integer (similar to C/C++'s `atoi` function).
+
+### [Solution](solutions/string_to_integer_atoi.py)
+
+<details>
+
+```python
+from string import digits
+
+class Solution:
+    def myAtoi(self, string: str) -> int:
+        string = string.strip()
+        prefix: str = ""
+        number_string = ""
+        found = False
+
+        if string[0] in ("-", "+"):
+            prefix = string[0]
+            string = string[1:]
+
+        for char in string:
+            if char in digits and not found:
+                found = True
+            if char not in digits and found:
+                return int(prefix + number_string)
+            elif found:
+                number_string += char
+
+        return int(prefix + number_string)
+```
+
+</details>
