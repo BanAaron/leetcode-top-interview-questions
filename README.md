@@ -15,45 +15,47 @@ You can click on `Solution` in each section to jump directly to the file.
 # Table of contents
 
 - [Easy](#two-sum)
-    - [Two Sum](#two-sum)
-    - [Roman to Integer](#roman-to-integer)
-    - [Longest Common Prefix](#longest-common-prefix)
-    - [Valid Parentheses](#valid-parentheses)
-    - [Merge Two Sorted Lists](#merge-two-sorted-lists)
-    - [Remove Duplicates from Sorted Array](#remove-duplicates-from-sorted-array)
-    - [Find the Index of the First Occurrence in a String](#find-the-index-of-the-first-occurrence-in-a-string)
-    - [Plus One](#plus-one)
-    - [sqrt(x)](#sqrtx)
-    - [Climbing Stairs](#climbing-stairs)
-    - [Merge Sorted Array](#merge-sorted-array)
-    - [Binary Tree In Order Traversal](#binary-tree-in-order-traversal)
-    - [Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)
-    - [Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)
-    - [Pascal's Triangle](#pascals-triangle)
-    - [Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)
-    - [Valid Palindrome](#valid-palindrome)
-    - [Single Number](#single-number)
-    - [Linked List Cycle](#linked-list-cycle)
-    - [Intersection of Two Linked Lists](#intersection-of-two-linked-lists)
-    - [Majority Element](#majority-element)
-    - [Excel Sheet Column Number](#excel-sheet-column-number)
-    - [Reverse Bits](#reverse-bits)
-    - [Number of 1 Bits](#number-of-1-bits)
-    - [Happy Number](#happy-number)
-    - [Reverse Linked List](#reverse-linked-list)
-    - [Contains Duplicate](#contains-duplicate)
-    - [Palindrome Linked List](#palindrome-linked-list)
-    - [Valid Anagram](#valid-anagram)
-    - [Missing Number](#missing-number)
-    - [Move Zeroes](#move-zeroes)
-    - [Power of Three](#power-of-three)
-    - [Reverse String](#reverse-string)
-    - [Intersection of Two Arrays II](#intersection-of-two-arrays-ii)
-    - [First Unique Character in a String](#first-unique-character-in-a-string)
-    - [Fizz Buzz](#fizz-buzz)
+  - [Two Sum](#two-sum)
+  - [Roman to Integer](#roman-to-integer)
+  - [Longest Common Prefix](#longest-common-prefix)
+  - [Valid Parentheses](#valid-parentheses)
+  - [Merge Two Sorted Lists](#merge-two-sorted-lists)
+  - [Remove Duplicates from Sorted Array](#remove-duplicates-from-sorted-array)
+  - [Find the Index of the First Occurrence in a String](#find-the-index-of-the-first-occurrence-in-a-string)
+  - [Plus One](#plus-one)
+  - [sqrt(x)](#sqrtx)
+  - [Climbing Stairs](#climbing-stairs)
+  - [Merge Sorted Array](#merge-sorted-array)
+  - [Binary Tree In Order Traversal](#binary-tree-in-order-traversal)
+  - [Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)
+  - [Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)
+  - [Pascal's Triangle](#pascals-triangle)
+  - [Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)
+  - [Valid Palindrome](#valid-palindrome)
+  - [Single Number](#single-number)
+  - [Linked List Cycle](#linked-list-cycle)
+  - [Intersection of Two Linked Lists](#intersection-of-two-linked-lists)
+  - [Majority Element](#majority-element)
+  - [Excel Sheet Column Number](#excel-sheet-column-number)
+  - [Reverse Bits](#reverse-bits)
+  - [Number of 1 Bits](#number-of-1-bits)
+  - [Happy Number](#happy-number)
+  - [Reverse Linked List](#reverse-linked-list)
+  - [Contains Duplicate](#contains-duplicate)
+  - [Palindrome Linked List](#palindrome-linked-list)
+  - [Valid Anagram](#valid-anagram)
+  - [Missing Number](#missing-number)
+  - [Move Zeroes](#move-zeroes)
+  - [Power of Three](#power-of-three)
+  - [Reverse String](#reverse-string)
+  - [Intersection of Two Arrays II](#intersection-of-two-arrays-ii)
+  - [First Unique Character in a String](#first-unique-character-in-a-string)
+  - [Fizz Buzz](#fizz-buzz)
 - [Medium](#longest-substring-without-repeating-characters)
-    - [Add Two Numbers](#add-two-numbers)
-    - [Longest Substring Without Repeating Characters](#longest-substring-without-repeating-characters)
+  - [Add Two Numbers](#add-two-numbers)
+  - [Longest Substring Without Repeating Characters](#longest-substring-without-repeating-characters)
+  - [Longest Palindromic Substring](#longest-palindromic-substring)
+  - [Reverse Integer](#reverse-integer)
 
 ## Two Sum
 
@@ -1346,7 +1348,7 @@ class Solution:
             if current == current[::-1]:
                 if len(current) > len(longest):
                     longest = current
-            # once the right pointer is at the end of the string
+            # once the right pointer is at the end of the string, 
             # increment the left pointer by 1
             # and set the right pointer to the left pointer position + 1
             if right == length:
@@ -1391,6 +1393,7 @@ class Solution:
 
         if negative:
             reverse = reverse * -1
+        # TODO: fix the -
         if reverse > 2 ** 31 - 1 or reverse < -2 ** 32 or reverse == -2147483651:
             return 0
         return reverse
