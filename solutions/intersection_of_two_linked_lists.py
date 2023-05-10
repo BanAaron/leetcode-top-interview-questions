@@ -8,7 +8,9 @@ class ListNode:
 
 
 class Solution:
-    def getIntersectionNode(self, head_a: ListNode, head_b: ListNode) -> Optional[ListNode]:
+    def getIntersectionNode(
+        self, head_a: ListNode, head_b: ListNode
+    ) -> Optional[ListNode]:
         seen: set[ListNode] = set()
         current = head_a
 
