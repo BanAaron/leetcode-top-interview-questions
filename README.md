@@ -52,6 +52,7 @@ You can click on `Solution` in each section to jump directly to the file.
     - [First Unique Character in a String](#first-unique-character-in-a-string)
     - [Fizz Buzz](#fizz-buzz)
 - [Medium](#longest-substring-without-repeating-characters)
+    - [Add Two Numbers](#add-two-numbers)
     - [Longest Substring Without Repeating Characters](#longest-substring-without-repeating-characters)
 
 ## Two Sum
@@ -1220,6 +1221,62 @@ class Solution:
 
 </details>
 
+
+## Add Two Numbers
+
+![medium](https://img.shields.io/badge/-medium-yellow "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/add-two-numbers/)
+
+You are given two non-empty linked lists representing two non-negative integers.
+The digits are stored in reverse order,
+and each of their nodes contains a single digit.
+Add the two numbers and return the sum as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+### [Solution](solutions/add_two_numbers.py)
+
+<details>
+
+```python
+from typing import Optional
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def addTwoNumbers(
+            self, l1: Optional[ListNode], l2: Optional[ListNode]
+    ) -> Optional[ListNode]:
+        t1_total = ""
+        t2_total = ""
+
+        node = l1
+        while node:
+            t1_total += str(node.val)
+            node = node.next
+
+        node = l2
+        while node:
+            t2_total += str(node.val)
+            node = node.next
+
+        result = list(str(int(t1_total[::-1]) + int(t2_total[::-1]))[::-1])
+        return lst2link(result)
+
+def lst2link(lst):
+    cur = dummy = ListNode(0)
+    for e in lst:
+        cur.next = ListNode(e)
+        cur = cur.next
+    return dummy.next
+```
+
+</details>
+
 ## Longest Substring Without Repeating Characters
 
 ![medium](https://img.shields.io/badge/-medium-yellow "Difficulty tag")
@@ -1253,6 +1310,90 @@ class Solution:
                     substring = ""
                     break
         return longest
+```
+
+</details>
+
+## Longest Palindromic Substring
+
+![medium](https://img.shields.io/badge/-medium-yellow "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/longest-palindromic-substring/)
+
+Given a string `s`, return the longest palindromic substring in `s`.
+
+### [Solution](solutions/longest_palindromic_substring.py)
+
+<details>
+
+```python
+class Solution:
+    def longestPalindrome(self, string: str) -> str:
+        length = len(string)
+        # if our string is already a palindrome, we know we cannot have the longest substring
+        if string == string[::-1] or length <= 1:
+            return string
+
+        # create our window pointers
+        left = 0
+        right = 1
+        longest = ""
+
+        while left + 1 < length:
+            # crete a window view using slices
+            current = string[left:right]
+            # if the window is a palindrome
+            if current == current[::-1]:
+                if len(current) > len(longest):
+                    longest = current
+            # once the right pointer is at the end of the string
+            # increment the left pointer by 1
+            # and set the right pointer to the left pointer position + 1
+            if right == length:
+                left += 1
+                right = left + 1
+            else:
+                right += 1
+
+        return longest
+```
+
+</details>
+
+## Reverse Integer
+
+![medium](https://img.shields.io/badge/-medium-yellow "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/reverse-integer/)
+
+Given a signed 32-bit integer `x`, return x with its digits reversed.
+If reversing `x` causes the value to go outside the signed 32-bit integer range `[-231, 231 - 1]`, then return 0.
+
+Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+
+### [Solution](solutions/reverse_integer.py)
+
+<details>
+
+```python
+class Solution:
+    def reverse(self, number: int) -> int:
+        reverse: int = 0
+        negative: bool = number < 0
+
+        if negative:
+            number *= -1
+
+        while number > 0:
+            last_digit = number % 10
+            reverse = (reverse * 10) + last_digit
+            number = number // 10
+
+        if negative:
+            reverse = reverse * -1
+        if reverse > 2 ** 31 - 1 or reverse < -2 ** 32 or reverse == -2147483651:
+            return 0
+        return reverse
 ```
 
 </details>
