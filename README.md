@@ -57,6 +57,7 @@ You can click on `Solution` in each section to jump directly to the file.
   - [Longest Palindromic Substring](#longest-palindromic-substring)
   - [Reverse Integer](#reverse-integer)
   - [String to Integer (atoi)](#string-to-integer-atoi)
+  - [Container with Most Water](#container-with-most-water)
 
 ## Two Sum
 
