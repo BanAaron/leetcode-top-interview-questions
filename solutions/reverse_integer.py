@@ -19,6 +19,6 @@ class Solution:
         if negative:
             reverse = reverse * -1
         # TODO: fix the -2147483651 case
-        if reverse > 2 ** 31 - 1 or reverse < -2 ** 32 or reverse == -2147483651:
+        if reverse > 2**31 - 1 or reverse < -(2**32) or reverse == -2147483651:
             return 0
         return reverse
