@@ -14,55 +14,51 @@ You can click on `Solution` in each section to jump directly to the file.
 
 # Table of contents
 
-<!-- TOC -->
-* [Easy Problems](#easy-problems)
-  * [Two Sum](#two-sum)
-  * [Roman to Integer](#roman-to-integer)
-  * [Longest Common Prefix](#longest-common-prefix)
-  * [Valid Parentheses](#valid-parentheses)
-  * [Merge Two Sorted Lists](#merge-two-sorted-lists)
-  * [Remove Duplicates from Sorted Array](#remove-duplicates-from-sorted-array)
-  * [Find the Index of the First Occurrence in a String](#find-the-index-of-the-first-occurrence-in-a-string)
-  * [Plus One](#plus-one)
-  * [sqrt(x)](#sqrtx)
-  * [Climbing Stairs](#climbing-stairs)
-  * [Merge Sorted Array](#merge-sorted-array)
-  * [Binary Tree In Order Traversal](#binary-tree-in-order-traversal)
-  * [Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)
-  * [Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)
-  * [Pascal's Triangle](#pascals-triangle)
-  * [Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)
-  * [Valid Palindrome](#valid-palindrome)
-  * [Single Number](#single-number)
-  * [Linked List Cycle](#linked-list-cycle)
-  * [Intersection of Two Linked Lists](#intersection-of-two-linked-lists)
-  * [Majority Element](#majority-element)
-  * [Excel Sheet Column Number](#excel-sheet-column-number)
-  * [Reverse Bits](#reverse-bits)
-  * [Number of 1 Bits](#number-of-1-bits)
-  * [Happy Number](#happy-number)
-  * [Reverse Linked List](#reverse-linked-list)
-  * [Contains Duplicate](#contains-duplicate)
-  * [Palindrome Linked List](#palindrome-linked-list)
-  * [Valid Anagram](#valid-anagram)
-  * [Missing Number](#missing-number)
-  * [Move Zeroes](#move-zeroes)
-  * [Power of Three](#power-of-three)
-  * [Reverse String](#reverse-string)
-  * [Intersection of Two Arrays II](#intersection-of-two-arrays-ii)
-  * [First Unique Character in a String](#first-unique-character-in-a-string)
-  * [Fizz Buzz](#fizz-buzz)
-* [Medium Problems](#medium-problems)
-  * [Add Two Numbers](#add-two-numbers)
-  * [Longest Substring Without Repeating Characters](#longest-substring-without-repeating-characters)
-  * [Longest Palindromic Substring](#longest-palindromic-substring)
-  * [Reverse Integer](#reverse-integer)
-  * [String to Integer (atoi)](#string-to-integer-atoi)
-  * [Container With Most Water](#container-with-most-water)
-  * [Sort Colors](#sort-colors)
-<!-- TOC -->
-
-# Easy Problems
+- [Easy](#two-sum)
+    - [Two Sum](#two-sum)
+    - [Roman to Integer](#roman-to-integer)
+    - [Longest Common Prefix](#longest-common-prefix)
+    - [Valid Parentheses](#valid-parentheses)
+    - [Merge Two Sorted Lists](#merge-two-sorted-lists)
+    - [Remove Duplicates from Sorted Array](#remove-duplicates-from-sorted-array)
+    - [Find the Index of the First Occurrence in a String](#find-the-index-of-the-first-occurrence-in-a-string)
+    - [Plus One](#plus-one)
+    - [sqrt(x)](#sqrtx)
+    - [Climbing Stairs](#climbing-stairs)
+    - [Merge Sorted Array](#merge-sorted-array)
+    - [Binary Tree In Order Traversal](#binary-tree-in-order-traversal)
+    - [Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)
+    - [Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)
+    - [Pascal's Triangle](#pascals-triangle)
+    - [Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)
+    - [Valid Palindrome](#valid-palindrome)
+    - [Single Number](#single-number)
+    - [Linked List Cycle](#linked-list-cycle)
+    - [Intersection of Two Linked Lists](#intersection-of-two-linked-lists)
+    - [Majority Element](#majority-element)
+    - [Excel Sheet Column Number](#excel-sheet-column-number)
+    - [Reverse Bits](#reverse-bits)
+    - [Number of 1 Bits](#number-of-1-bits)
+    - [Happy Number](#happy-number)
+    - [Reverse Linked List](#reverse-linked-list)
+    - [Contains Duplicate](#contains-duplicate)
+    - [Palindrome Linked List](#palindrome-linked-list)
+    - [Valid Anagram](#valid-anagram)
+    - [Missing Number](#missing-number)
+    - [Move Zeroes](#move-zeroes)
+    - [Power of Three](#power-of-three)
+    - [Reverse String](#reverse-string)
+    - [Intersection of Two Arrays II](#intersection-of-two-arrays-ii)
+    - [First Unique Character in a String](#first-unique-character-in-a-string)
+    - [Fizz Buzz](#fizz-buzz)
+- [Medium](#longest-substring-without-repeating-characters)
+    - [Add Two Numbers](#add-two-numbers)
+    - [Longest Substring Without Repeating Characters](#longest-substring-without-repeating-characters)
+    - [Longest Palindromic Substring](#longest-palindromic-substring)
+    - [Reverse Integer](#reverse-integer)
+    - [String to Integer (atoi)](#string-to-integer-atoi)
+    - [Container with Most Water](#container-with-most-water)
+    - [Sort Colors](#sort-colors)
 
 ## Two Sum
 
@@ -475,6 +471,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 class Solution:
     def inorderTraversal(self, root: [TreeNode]) -> list[int]:
         res = []
@@ -512,11 +509,13 @@ tree.
 ```python
 from typing import Optional
 
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
+
 
 class Solution:
     def sortedArrayToBST(self, nums: list[int]) -> Optional[TreeNode]:
@@ -554,6 +553,8 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
+
 class Solution:
     def maxDepth(self, root: [TreeNode]) -> int:
         if not root:
@@ -597,7 +598,6 @@ class Solution:
 
 </details>
 
-
 ## Best Time to Buy and Sell Stock
 
 ![easy](https://img.shields.io/badge/-easy-brightgreen "Difficulty tag")
@@ -637,7 +637,8 @@ class Solution:
 ### [Problem](https://leetcode.com/problems/valid-palindrome/description/)
 
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all
-non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and
+numbers.
 
 Given a string `s`, return `true` if it is a palindrome, or `false` otherwise.
 
@@ -698,10 +699,12 @@ Return `true` if there is a cycle in the linked list. Otherwise, return `false`.
 ```python
 from typing import Optional
 
+
 class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
+
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
@@ -734,10 +737,12 @@ If the two linked lists have no intersection at all, return `None`.
 ```python
 from typing import Optional
 
+
 class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
+
 
 class Solution:
     def getIntersectionNode(self, head_a: ListNode, head_b: ListNode) -> Optional[ListNode]:
@@ -887,7 +892,8 @@ Write an algorithm to determine if a number `n` is happy.
 A happy number is a number defined by the following process:
 
 - Starting with any positive integer, replace the number by the summed squares of its digits.
-- Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
+- Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not
+  include 1.
 - Those numbers for which this process ends in 1 are happy.
 
 Return `true` if `n` is a happy number, and `false` if not.
@@ -930,10 +936,12 @@ Given the `head` of a singly linked list, reverse the list, and return the rever
 ```python
 from typing import Optional
 
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
@@ -990,10 +998,12 @@ Given the `head` of a singly linked list, return `true` if it is a palindrome or
 ```python
 from typing import Optional
 
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 class Solution:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
@@ -1178,7 +1188,8 @@ class Solution:
 
 ### [Problem](https://leetcode.com/problems/first-unique-character-in-a-string/)
 
-Given a string `s`, find the first non-repeating character in it and return its index. If it does not exist, return `-1`.
+Given a string `s`, find the first non-repeating character in it and return its index. If it does not exist,
+return `-1`.
 
 ### [Solution](solutions/first_unique_character_in_a_string.py)
 
@@ -1230,7 +1241,6 @@ class Solution:
 
 </details>
 
-
 ## Add Two Numbers
 
 ![medium](https://img.shields.io/badge/-medium-yellow "Difficulty tag")
@@ -1251,10 +1261,12 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 ```python
 from typing import Optional
 
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 class Solution:
     def addTwoNumbers(
@@ -1275,6 +1287,7 @@ class Solution:
 
         result = list(str(int(t1_total[::-1]) + int(t2_total[::-1]))[::-1])
         return lst2link(result)
+
 
 def lst2link(lst):
     cur = dummy = ListNode(0)
@@ -1424,6 +1437,7 @@ which converts a string to a 32-bit signed integer (similar to C/C++'s `atoi` fu
 ```python
 from string import digits
 
+
 class Solution:
     def myAtoi(self, string: str) -> int:
         string = string.strip()
@@ -1482,6 +1496,40 @@ class Solution:
                 right -= 1
 
         return area
+```
+
+</details>
+
+## Sort Colors
+
+![medium](https://img.shields.io/badge/-medium-yellow "Difficulty tag")
+
+### [Problem](https://leetcode.com/problems/sort-colors/)
+
+Given an array nums with `n` objects colored red, white, or blue, sort them in-place so that objects of the same color
+are adjacent, with the colors in the order red, white, and blue.
+
+We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
+
+You must solve this problem without using the library's sort function.
+
+### [Solution](solutions/sort_colors.py)
+
+<details>
+
+```python
+class Solution:
+    def sortColors(self, nums: list[int]) -> None:
+        while True:
+            swapped = False
+            for i, _ in enumerate(nums):
+                if i < len(nums) - 1 and nums[i] > nums[i + 1]:
+                    nums[i], nums[i + 1] = nums[i + 1], nums[i]
+                    swapped = True
+            if not swapped:
+                break
+
+        print(nums)
 ```
 
 </details>
